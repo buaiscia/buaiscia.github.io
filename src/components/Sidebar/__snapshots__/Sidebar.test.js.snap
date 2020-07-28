@@ -37,6 +37,28 @@ exports[`Sidebar renders correctly 1`] = `
         Test bio
       </p>
     </div>
+    <p
+      style={
+        Object {
+          "fontWeight": 800,
+        }
+      }
+    >
+      Would you like to know more?
+    </p>
+    <a
+      href="http://www.alexbuaiscia.com/"
+      style={
+        Object {
+          "fontWeight": 800,
+        }
+      }
+      target="__blank"
+    >
+      I'm doing my part, on alexbuaiscia.com
+    </a>
+    <br />
+    <br />
     <nav
       className="menu"
     >
