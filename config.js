@@ -16,7 +16,7 @@ module.exports = {
       path: '/'
     },
     {
-      label: '100daysofcode',
+      label: '100 days of code',
       path: '/pages/100daysofcode'
     },
     {
