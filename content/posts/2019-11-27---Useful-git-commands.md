@@ -1,9 +1,9 @@
 ---
 title: Useful git commands
 date: "2019-05-18T16:51:00.000Z"
-layout: post
+template: post
 draft: false
-path: "/posts/useful-git-commands/"
+slug: "useful-git-commands"
 category: "Git"
 tags:
   - "Git"
@@ -11,7 +11,7 @@ tags:
 description: "Some personal useful commands to use in git"
 ---
 
-![Git](./git.jpg)
+![Git](/media/git.jpg)
 
 I'm creating this post for reminding myself about some useful git features... and updating it along the way.
 
@@ -45,6 +45,10 @@ git push origin master
 
 `git push origin branchname`
 
+-- *Push local working branch to its correspondent on Github*
+
+`git push origin HEAD`
+
 -- *Merge branch into master*
 ```
 git checkout master
@@ -66,6 +70,10 @@ git merge branchname
 
 `git reset --hard a0d3fe6` *reverting to last commit*
 
--- *Push directly from your actual branch without the need to write it*
+-- *Wrong name branch? No problem: delete the one in GH, rename the local one and repush it*
 
-`git push origin HEAD`
+```
+git push origin :old-name-of-branch-on-github
+git branch -m old-name-of-branch-on-github new-name-for-branch-you-want
+git push origin new-name-for-branch-you-want
+```
