@@ -6,14 +6,14 @@ export default function About() {
   return (
     <>
       <PageSeo
-        title={`About - ${siteMetadata.author}`}
+        title={`Who's me - ${siteMetadata.author}`}
         description={`About me - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/about`}
       />
       <div className="divide-y">
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            About
+            Who's me
           </h1>
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
@@ -22,8 +22,12 @@ export default function About() {
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
-            <div className="text-gray-500 dark:text-gray-400">Professor of Atmospheric Science</div>
-            <div className="text-gray-500 dark:text-gray-400">Stanford University</div>
+            <div className="text-gray-500 dark:text-gray-400">Full-stack Software Developer</div>
+            <div className="text-gray-500 dark:text-gray-400">
+              <a href="https://www.24i.com" target="_blank" rel="noreferrer">
+                24i
+              </a>
+            </div>
             <div className="flex pt-6 space-x-3">
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
               <SocialIcon kind="github" href={siteMetadata.github} />
@@ -35,20 +39,67 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His
-              research interests includes complexity modelling of tailwinds, headwinds and
-              crosswinds.
+              Born in Italy, moved to Colombia, Bogota' and then to Czech Republic, Brno, I've
+              passed from IT in high school to humanistic studies and languages in the years
+              afterwards, getting from teaching to being academic director in a language school.
             </p>
             <p>
-              He leads the clean energy group which develops 3D air pollution-climate models, writes
-              differential equation solvers, and manufactures titanium plated air ballons. In his
-              free time he bakes raspberry pi.
+              Back in Europe my love for IT rised again, and during my years as application support
+              engineer I self learnt development, working on personal and professional projects
+              (automation webtools).
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
-              placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem
-              nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+              At the moment I'm employed as fullstack software engineer where I develop using a
+              Javascript/Typescript tech stack for frontend and backend (NodeJS), plus serverless
+              services.
             </p>
+            <p>
+              In the little personal free time I try to help other want-to-be developers and write
+              about what I learn.
+            </p>
+            <h4>On the web</h4>
+            🛠{' '}
+            <a
+              style={{ textDecorationLine: 'line-through', textDecorationStyle: 'solid' }}
+              href="http://www.alexbuaiscia.com"
+              target="__blank"
+            >
+              My website, alexbuaiscia.com
+            </a>{' '}
+            Under reconstruction (without rush)
+            <br />
+            🛠{' '}
+            <a href="https://github.com/buaiscia" target="__blank">
+              My Github repositories
+            </a>
+            <br />
+            🛠{' '}
+            <a href="https://www.linkedin.com/in/alex-buaiscia/" target="__blank">
+              My Linkedin profile
+            </a>
+            <br />
+            🛠{' '}
+            <a href="https://twitter.com/AlexBuaiscia" target="__blank">
+              My Twitter where I can be reached
+            </a>
+            <ul>
+              <li>HTML5 / CSS3</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>NodeJS</li>
+              <li>Express / Restify</li>
+              <li>Typescript</li>
+              <li>Docker</li>
+              <li>AWS SAM + Lambdas</li>
+              <li>Swagger</li>
+              <li>Postman</li>
+              <li>MongoDB</li>
+              <li>EJS</li>
+              <li>Linux/Unix</li>
+              <li>A little of GraphQL</li>
+              <li>Some Python and Java</li>
+              <li>SOAP/REST services/APIs</li>
+            </ul>
           </div>
         </div>
       </div>
