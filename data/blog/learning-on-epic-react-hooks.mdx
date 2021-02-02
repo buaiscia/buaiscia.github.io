@@ -1,0 +1,181 @@
+---
+title: Epic React. Hooks. What I'm learning.
+date: '2020-11-06'
+template: post
+draft: true
+tags: ['react', 'web development', 'epic react']
+summary: "A guide of what I'm learning on the Epic React workshopds by Kent Dodds. This is the second one: hooks"
+---
+
+-- in controlled components value is changed/updated by state and uncontrolled by event handlers
+
+## 1 - useState
+
+THe interesting part of useState is how under the hood is nothing else but an array declaration. When it's used, it gets two elements of the array, in which the first is the variable and the second one is the function to update the variable.
+So a code like this:
+`const [ count, setCount ] = useState(0)`
+not destructured:
+
+```
+const array = useState(0)
+const count = array[0]
+const setCount = array[1]
+```
+
+The first exercise is quite simple if one understands React states well. Everytime (unless different specified) the state changes, in any part of the component, there will be a re-render (of the page or component depending) of the virtual DOM hence updating what appears on the page.
+If I call a function on the onChange in the input, and that function changes the state (setCount(event.target.value)), then I can call the updated state in any part of the render
+` {count ? <strong>Count is {count}</strong> : 'Add a number to count'}`
+
+In the second part the task would be to use a prop in the component as initial value to pass
+`<Counting initialCount=0`
+I find there are different ways. The best way is to setState to that initial value that is destructured in the function arguments:
+
+```
+function Counting({ initialCount = 0 })
+```
+
+Destructuring is necessary because initial name is an object so, if passing the argument just like (initialCount), the result will be a [Object object].
+The default value (= '') is also necessary in case we don't pass anything as a prop. In this case we don't cause a crash because of undefined value.
+So one way is to setState(initialCount) and value=count in the input.
+
+Another possible way is to set the defaultValue of the input to the initialCount. This will have the same effect except that the state of the rendered text won't be updated until something is typed. It's possible to create a check to use the count (like a nested if but with ternary operator). However, it will make the code more difficult to read and follow in its flow.
+
+## 2 - useEffect
+
+- it's called every render of the component, including the first and every time the state changes
+- to persist the state, call the localstorage methods inside useEffect `const [name, setName] = React.useState(window.localStorage.getItem('name') || initialName)`
+- localStorage performance issue - slow
+- React’s useState hook allows you to pass a function instead of the actual value, and then it will only call that function to get the state value when the component is rendered the first time: `React.useState(() => someExpensiveComputation())` ... that's the same as the callback on setState in class components
+- lazy initialization = not reading from localStorage every render
+  --> create a callback function: useEffect
+  `const [name, setName] = React.useState(() => window.localStorage.getItem('name') || initialName)`
+  If we put a console inside the callback we cans see it's called only on the first render
+- To be used only for bottleneck functions that require sync time
+
+- dependency array: second argument on useEffect which signals to React that your effect callback function should be called when (and only when) those dependencies change:
+
+```
+React.useEffect(() => {
+    window.localStorage.setItem('count', count)
+  }, [name])
+```
+
+if other states apart fron name change setItem won't be called
+If left empty it's like never use useEffect with any state with useEffect
+The state in the dependency array is an object that is compared on the render with the previous state with object comparation. If it's the same won't run useEffect, otherwise yes.
+
+custom hooks: external function called inside the hook whose name starts with ”use”.
+If we have different functions inside the compoenent method we can externilize those, even useEffect:
+
+```
+function Greeting({ initialCount = 0 }) {
+  const [count, setCount] = React.useState(
+    () => window.localStorage.getItem('count') || initialCount,
+  )
+
+  React.useEffect(() => {
+    window.localStorage.setItem('count', count)
+  }, [count])
+
+  function handleChange(event) {
+    setCount(event.target.value)
+  }
+```
+
+to -->
+
+```
+function useLocalStorageWithState() {
+  const [count, setCount] = React.useState(
+    () => window.localStorage.getItem('count') || initialCount,
+  )
+
+  React.useEffect(() => {
+    window.localStorage.setItem('count', count)
+  }, [count])
+
+  return [count, setCount];
+}
+
+function Greeting({ initialCount= 0 }) {
+  const [count, setCount] = useLocalStorageWithState()
+  function handleChange(event) {
+    setCount(event.target.value)
+  }
+```
+
+useLocalStorageWithState should have the same use as the useState hook, so it can return an array like useState, and we can store in a same array. So we have created a customed useState hook that does other stuff as well.
+We pass as well count and initialCount as parameters `useLocalStorageWithState(count, initialCount)` and then making useLocalStorageWithState more generic, receiving as arguments `key, defaultValue` , so the method can be reused freely and not stay chained to a count state. The same applies to the state. We can set [state, setState] and return the same.
+Having two arguments means that also useEffect should have two in the dependency array.
+
+- flexible localStorage hook. This was the most complex part of the workshop to think about. The solution is not so complicated, but to be honest I couldn't manage until checking the video how to make this logic work (ok maybe it's because I'm tired 😅)
+  And the logic is the following:
+  - get the item from local storage
+  - if present, JSON parse it and return the result
+  - if not, return the default value
+
+Thant's for setting the state; for making the changes (useEffect), in this case for creating/editing the local storage, once the state changes we can just stringify whatever the state will be and store it.
+
+In case as argument of useLocalStorageWithState, instead of a number, we'll pass a function, it's possible to create a check to return the results of another function.
+`const [name, setName] = useLocalStorageWithState('name', complexCounting() )` --> pass a function as default value
+`return typeof defaultValue === 'function' ? defaultValue() : defaultValue;` --> return to useState the result of the method
+
+Then it comes the part that was beyond my imagination. The case is what if somebody wants to pass another value to the 'key'? Now it's passed 'count' as string, but maybe somebody will change it.
+There's no direct way to change the state of the key, so what is done is store the key into a var that won't trigger the render using useRef. Following that, in useEffect we can compare the old key with the new one.
+
+According to the docs:
+
+> useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
+> Note that useRef() is useful for more than the ref attribute. It’s handy for keeping any mutable value around similar to how you’d use instance fields in classes.
+
+The difference with useState is then that useRef doesn't trigger a rerender, so with this hook we can actually set the key without triggering the rerender. The purpose of this is clear in the useEffect.
+
+```
+const prevKey = prevKeyRef.current;
+    if (prevKey !== key) {
+      window.localStorage.removeItem(prevKey)
+    }
+```
+
+That means that usually we store in localStorage a value. But this value is in an object, and that object has a key. So for now it's 'count'. But if it will be 'sum', and we don't remove the initial key, we'll have two objects in localStorage. So if the new key and the old one, which is stored in the useRef var, is different, we will remove the obect in localStorage with the old key.
+
+## 3 - Lifting and Colocating state
+
+Lifting state is when you have state managed inside a component but a parent component needs it to render it or display it somewhere else.
+So when it's needed to lifting state, we take that state and find the least common parent between the two components. So the state is lifted from a lower branch of the family -or the tree- to a higher one.
+
+Colocating state, instead, is to place the state management the furthest down the tree as possible where not shared by a parent component. A state correctly colocated helps React to not having to render the whole application for just, for example, an input change.
+If a state is used only by a component up the tree, it's probably possible to refactor it colocating the state in the sibling component that is managing it.
+
+```
+  const [name, setName] = React.useState('')
+  const [animal, setAnimal] = React.useState('')
+  return (
+      <Name name={name} onNameChange={event => setName(event.currentTarget.value)} />
+      <FavoriteAnimal animal={animal} onAnimalChange={event => setAnimal(event.currentTarget.value)} />
+      <Display animal={animal} />
+  )
+```
+
+In the above case, for example, the animal state was lifted to the parent component as it's used by the Display component as well. But the name state is not used, so it can be colocated to Name component only. This will result like this:
+
+```
+function Name() {
+  const [name, setName] = React.useState('')
+
+  return (
+    <div>
+      <label htmlFor="name">Name: </label>
+      <input id="name" value={name} onChange={event => setName(event.currentTarget.value)} />
+    </div>
+  )
+}
+
+const [animal, setAnimal] = React.useState('')
+  return (
+    <form>
+      <Name />
+      <FavoriteAnimal animal={animal} onAnimalChange={event => setAnimal(event.currentTarget.value)} />
+      <Display animal={animal} />
+  )
+```
