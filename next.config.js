@@ -1,5 +1,3 @@
-const isProd = process.env.NODE_ENV === 'production'
-
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -9,7 +7,6 @@ module.exports = withBundleAnalyzer({
   experimental: {
     modern: true,
   },
-  assetPrefix: isProd ? 'https://cdn.statically.io/gh/buaiscia/buaiscia.github.io/gh-pages/' : '',
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
