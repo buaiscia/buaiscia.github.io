@@ -5,10 +5,10 @@
   "scripts": {
     "start": "next dev",
     "dev": "next dev -p 3010",
-    "build": "next build && node ./scripts/generate-sitemap",
+    "build": "next build",
     "export": "next export",
     "serve": "next start",
-    "analyze": "ANALYZE=true next build"
+    "deploy": "npm run build && npm run export"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.5.0",
@@ -20,6 +20,8 @@
     "autoprefixer": "^10.1.0",
     "gray-matter": "^4.0.2",
     "image-size": "0.9.3",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
     "next": "10.0.5",
     "next-mdx-remote": "^2.0.0",
     "next-optimized-images": "^2.6.2",
@@ -37,7 +39,8 @@
     "remark-math": "3.0.1",
     "remark-slug": "6.0.0",
     "tailwindcss": "^2.0.2",
-    "tinytime": "^0.2.6"
+    "tinytime": "^0.2.6",
+    "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
@@ -60,6 +63,9 @@
     "remark-frontmatter": "3.0.0",
     "remark-parse": "9.0.0",
     "remark-stringify": "9.0.0",
+    "responsive-loader": "^2.3.0",
+    "responsive-loader-sharp": "^0.8.0",
+    "sharp": "^0.26.3",
     "unified": "9.2.0",
     "unist-util-visit": "2.0.3"
   },

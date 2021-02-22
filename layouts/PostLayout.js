@@ -6,6 +6,7 @@ import PageTitle from '@/components/PageTitle'
 import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetdata from '@/data/siteMetadata'
+import authorImg from '../public/static/images/avatar.jpeg'
 
 const editUrl = (fileName) => `${siteMetdata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -44,7 +45,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             <dd>
               <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                 <li className="flex items-center space-x-2">
-                  <img src={siteMetdata.image} alt="avatar" className="w-10 h-10 rounded-full" />
+                  <img src={authorImg} alt="avatar" className="w-10 h-10 rounded-full" />
                   <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                     <dt className="sr-only">Name</dt>
                     <dd className="text-gray-900 dark:text-gray-100">{siteMetdata.author}</dd>
