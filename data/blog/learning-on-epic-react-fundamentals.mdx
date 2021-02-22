@@ -15,7 +15,7 @@ As part of my learning process, I'm going to note down not everything, but what 
 Of course you will find many more details and, well, the workshop itself directly in <a href="https://epicreact.dev">epicreact.dev</a>
 I hope this will be useful to somebody else apart from me, and forgive my mistakes in English (not a native speaker).
 
-<br>
+<br />
 
 ## 01: Basic JavaScript-rendered
 
@@ -23,7 +23,7 @@ In the first exercise, it's necessary to make some DOM manipulation with plain J
 
 However, I did have to do some thinking on the additional exercise, as I'm not used to work with the root element of the body. So I personally didn't know -but now that I know, it makes sense - that there's a body object inside the document object. I won't give here the solution, but it's an important reminder to always check the parent elements... what are they hiding inside :)
 
-<br>
+<br />
 
 ## 02: Intro to raw React APIs
 
@@ -43,7 +43,7 @@ The second thing is that createElement has three - or more - arguments that can 
 
 As a matter of fact, the children property doesn't even have to be defined inside the second argument of createElement, but can be listed at the end of the method.
 
-<br>
+<br />
 
 ## 03: Using JSX
 
@@ -61,8 +61,8 @@ It will create a div with its own class and the innertext as children.
 Another interesting point in the video is about prioritazion of position using the spread operator. Supposing that we have the above props, but then we want to override the className with another name, we have to place the spread props before. In synthesis, the right argument will always override the left ones.
 
 ```
-<div {...props, className='secondClass'} /> // <div className="secondClass">
-<div {className='secondClass', ...props} /> // <div className="myClass">
+<div {...props, className='secondClass'} /> // <div className="secondClass" />
+<div {className='secondClass', ...props} /> // <div className="myClass" />
 ```
 
 ## 04: Creating custom components
@@ -93,9 +93,7 @@ const element = (
 Following that, it's about referring the same helloFunction but make it directly compiled through Babel as an element, without needing to pass through createElement. This is possible thanks to JSX, and it's enough to make the function name with first letter as capital, and reference it inside the element object as that.
 `HelloFunction = () = {}`
 
-`
-
-<HelloFunction>Hello!</HelloFunction>`
+`<HelloFunction>Hello!</HelloFunction>`
 
 This is the equivalent of `React.createElement(HelloFunction, null, 'Hello!')`
 
@@ -127,7 +125,7 @@ HelloFunction.propTypes = {
 
 Anyway, Typescript rules!
 
-<br>
+<br />
 
 ## 05: Styling
 
@@ -168,7 +166,7 @@ The second part of the exercise was about doing the same as above but using the 
 First, it's needed to be imported from 'react' and not 'react-dom'.
 
 Then, adding the reference to our input
-`<input ref={usernameInput}>`
+`<input ref={usernameInput} />`
 In the main function (or custom component), we can call the hook: `const usernameInput = useRef(null);`
 Why null? The argument of useRef is the initial value. But in this case we don't need that, just what will be in usernameInput.
 
@@ -187,7 +185,7 @@ setUsername(value.toLowerCase());
 So the flow is the following:
 input from user --> update input state --> transforming input state -> sending the state as value of the input --> input appears on screens.
 
-<br>
+<br />
 
 ## 07: Rendering Arrays
 
