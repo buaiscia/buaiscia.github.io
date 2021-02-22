@@ -2,9 +2,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
-const withPlugins = require('next-compose-plugins')
-const optimizedImages = require('next-optimized-images')
-
 const ghPages = process.env.DEPLOY_TARGET === 'gh-pages'
 
 module.exports = withBundleAnalyzer({
@@ -12,6 +9,17 @@ module.exports = withBundleAnalyzer({
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   experimental: {
     modern: true,
+  },
+  exportPathMap: async (defaultPathMap, { dev, dir, outDir, distDir, buildId }) => {
+    return {
+      '/': { page: '/' },
+      '/blog': { page: '/blog' },
+      '/tags': { page: '/tags' },
+      '/about': { page: '/about' },
+      // '/p/hello-nextjs': { page: '/post', query: { title: 'hello-nextjs' } },
+      // '/p/learn-nextjs': { page: '/post', query: { title: 'learn-nextjs' } },
+      // '/p/deploy-nextjs': { page: '/post', query: { title: 'deploy-nextjs' } },
+    }
   },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
@@ -40,7 +48,6 @@ module.exports = withBundleAnalyzer({
         'react-dom': 'preact/compat',
       })
     }
-    optimizedImages()
     return config
   },
 })
