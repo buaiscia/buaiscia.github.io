@@ -1175,7 +1175,7 @@
     refractor "^3.0.0"
     unist-util-visit "^2.0.2"
 
-"@mdx-js/loader@^1.6.20":
+"@mdx-js/loader@^1.6.22":
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-1.6.22.tgz#d9e8fe7f8185ff13c9c8639c048b123e30d322c4"
   integrity sha512-9CjGwy595NaxAYp0hF9B/A0lH6C8Rms97e2JS9d3jVUtILn6pT5i5IV965ra3lIWc7Rs1GG1tBdVF7dCowYe6Q==
@@ -1231,10 +1231,10 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-10.0.5.tgz#446e59ee7a8d05061be784b24732c369653038ab"
   integrity sha512-dw6Q7PALIo7nTFfaB4OnRDte3EikrApGtjX/4cRmYXLh+uudDI50aS39MaGeKKZ2mxPKoNiFcY6Slv1f6KIPOw==
 
-"@next/mdx@^10.0.5":
-  version "10.0.5"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-10.0.5.tgz#4f877870f7bc11dadf6c95558e64578db0901b0d"
-  integrity sha512-gQHbEzclXb5IydhpOpHRUhpa5nZm3UCYJQ48e1W5vE7ywidLNeMmNKKtR0nSnRZu0LJMaSSoR5wM2Nppqj/ZFQ==
+"@next/mdx@^10.0.7":
+  version "10.0.7"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-10.0.7.tgz#c4de220ad5e4c38297c2972f2d1f7e2107b88477"
+  integrity sha512-joaEBSh+P6YpRIrRti4OoDCn6sEMxUb00q2Hd29s4/oGAVOmgo7nRCSRoy99i/uGK2IMBjPksSrHTLwW+bcG5A==
 
 "@next/polyfill-module@10.0.5":
   version "10.0.5"
