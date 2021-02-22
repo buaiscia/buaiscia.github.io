@@ -2,11 +2,14 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
+const ghPages = process.env.DEPLOY_TARGET === 'gh-pages'
+
 module.exports = withBundleAnalyzer({
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   experimental: {
     modern: true,
   },
+  assetPrefix: ghPages ? '/buaiscia.github.io/' : '',
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
