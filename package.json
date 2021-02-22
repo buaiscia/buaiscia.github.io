@@ -6,7 +6,6 @@
     "start": "next dev",
     "dev": "next dev -p 3010",
     "build": "next build && node ./scripts/generate-sitemap",
-    "export": "next export",
     "serve": "next start",
     "analyze": "ANALYZE=true next build"
   },
