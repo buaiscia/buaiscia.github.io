@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Alex Buaiscia Blog</title>
+      <link>https://buaiscia.github.io/blog</link>
+      <description>A tech blog of development</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Alex Buaiscia)</managingEditor>
+      <webMaster>undefined (Alex Buaiscia)</webMaster>
+      <lastBuildDate>Wed, 02 Sep 2020 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://buaiscia.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://buaiscia.github.io/blog/creating-and-setting-event-listeners</guid>
+    <title>Creating events and setting listeners in Javascript</title>
+    <link>https://buaiscia.github.io/blog/creating-and-setting-event-listeners</link>
+    <description>How to add an event and how to create a listener to that event</description>
+    <pubDate>Wed, 02 Sep 2020 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>Javascript</category><category>Web development</category>
+  </item>
+
+    </channel>
+  </rss>

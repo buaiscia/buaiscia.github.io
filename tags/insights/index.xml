@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Alex Buaiscia Blog</title>
+      <link>https://buaiscia.github.io/blog</link>
+      <description>A tech blog of development</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Alex Buaiscia)</managingEditor>
+      <webMaster>undefined (Alex Buaiscia)</webMaster>
+      <lastBuildDate>Wed, 02 Dec 2020 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://buaiscia.github.io/tags/insights/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://buaiscia.github.io/blog/how-transitioned-from-humanistic-to-tech-why-helped</guid>
+    <title>How I transitioned from humanistic jobs to tech and development and why it is possible to start from the basics.</title>
+    <link>https://buaiscia.github.io/blog/how-transitioned-from-humanistic-to-tech-why-helped</link>
+    <description>Transitioning from literature and languages to tech was not easy. Making a career from basic roles to developer is possible, and even better sometimes.</description>
+    <pubDate>Wed, 02 Dec 2020 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>insights</category>
+  </item>
+
+    </channel>
+  </rss>

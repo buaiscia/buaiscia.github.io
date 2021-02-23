@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Alex Buaiscia Blog</title>
+      <link>https://buaiscia.github.io/blog</link>
+      <description>A tech blog of development</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Alex Buaiscia)</managingEditor>
+      <webMaster>undefined (Alex Buaiscia)</webMaster>
+      <lastBuildDate>Tue, 26 Jan 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://buaiscia.github.io/tags/git/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://buaiscia.github.io/blog/useful-git-commands</guid>
+    <title>Useful GIT commands</title>
+    <link>https://buaiscia.github.io/blog/useful-git-commands</link>
+    <description>Useful commands to use in git in everyday working life</description>
+    <pubDate>Tue, 26 Jan 2021 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>git</category><category>web development</category>
+  </item>
+
+    </channel>
+  </rss>
