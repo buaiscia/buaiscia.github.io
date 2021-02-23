@@ -5,6 +5,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const ghPages = process.env.DEPLOY_TARGET === 'gh-pages'
 
 module.exports = withBundleAnalyzer({
+  images: {
+    loader: 'cloudinary',
+    path: 'https://res.cloudinary.com/buaiscia/image/upload/v1614031509/techblog/',
+  },
   assetPrefix: ghPages ? '/buaiscia.github.io/' : '',
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   experimental: {
