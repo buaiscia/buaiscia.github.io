@@ -11,26 +11,6 @@
       <atom:link href="https://buaiscia.github.io/index.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://buaiscia.github.io/blog/laravel-extend-validation-rule</guid>
-    <title>Extend an input validation rule in Laravel</title>
-    <link>https://buaiscia.github.io/blog/laravel-extend-validation-rule</link>
-    <description>Extend an input validation rule in Laravel</description>
-    <pubDate>Tue, 26 Jan 2021 00:00:00 GMT</pubDate>
-    <author>undefined (Alex Buaiscia)</author>
-    <category>php</category><category>docker</category><category>web development</category>
-  </item>
-
-  <item>
-    <guid>https://buaiscia.github.io/blog/useful-docker-php-commands</guid>
-    <title>Useful Docker with PHP commands</title>
-    <link>https://buaiscia.github.io/blog/useful-docker-php-commands</link>
-    <description>Useful Docker with PHP commands</description>
-    <pubDate>Tue, 26 Jan 2021 00:00:00 GMT</pubDate>
-    <author>undefined (Alex Buaiscia)</author>
-    <category>php</category><category>docker</category><category>web development</category>
-  </item>
-
-  <item>
     <guid>https://buaiscia.github.io/blog/useful-git-commands</guid>
     <title>Useful GIT commands</title>
     <link>https://buaiscia.github.io/blog/useful-git-commands</link>
@@ -41,9 +21,9 @@
   </item>
 
   <item>
-    <guid>https://buaiscia.github.io/blog/how-transitioned-from-humanistic-to-tech-why-helped</guid>
+    <guid>https://buaiscia.github.io/blog/how-transitioned-from-humanistic-to-tech-and-helped</guid>
     <title>How I transitioned from humanistic jobs to tech and development and why it is possible to start from the basics.</title>
-    <link>https://buaiscia.github.io/blog/how-transitioned-from-humanistic-to-tech-why-helped</link>
+    <link>https://buaiscia.github.io/blog/how-transitioned-from-humanistic-to-tech-and-helped</link>
     <description>Transitioning from literature and languages to tech was not easy. Making a career from basic roles to developer is possible, and even better sometimes.</description>
     <pubDate>Wed, 02 Dec 2020 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
@@ -71,9 +51,9 @@
   </item>
 
   <item>
-    <guid>https://buaiscia.github.io/blog/creating-and-setting-event-listeners</guid>
+    <guid>https://buaiscia.github.io/blog/creating-events-and-setting-listeners</guid>
     <title>Creating events and setting listeners in Javascript</title>
-    <link>https://buaiscia.github.io/blog/creating-and-setting-event-listeners</link>
+    <link>https://buaiscia.github.io/blog/creating-events-and-setting-listeners</link>
     <description>How to add an event and how to create a listener to that event</description>
     <pubDate>Wed, 02 Sep 2020 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
