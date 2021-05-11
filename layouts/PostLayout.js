@@ -73,8 +73,8 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               <Link href={discussUrl(slug)} rel="nofollow">
                 {'Discuss on Twitter'}
               </Link>
-              {` • `}
-              <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+              {/* {` • `} */}
+              {/* <Link href={editUrl(fileName)}>{'View on GitHub'}</Link> */}
             </div>
           </div>
           <footer className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">

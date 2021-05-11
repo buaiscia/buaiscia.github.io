@@ -112,3 +112,15 @@ _Flow:_
 `git fetch`
 
 `git checkout remote-branch`
+
+-- \_...Or the alternative way
+
+`git checkout -b remote-branch`
+
+`git pull origin remote-branch`
+
+-- \_Delete multiple branches in git
+
+`git branch | grep "<pattern>"` to preview the branches
+
+`git branch | grep "<pattern>" | xargs git branch -D` to actually delete them
