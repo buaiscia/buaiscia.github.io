@@ -4,7 +4,7 @@ date: '2020-11-06'
 template: post
 draft: true
 tags: ['react', 'web development', 'epic react']
-summary: "A guide of what I'm learning on the Epic React workshopds by Kent Dodds. This is the second one: hooks"
+summary: "A guide of what I'm learning on the Epic React workshopds by Kent Dodds. This is the second one: useState + useEffect"
 ---
 
 -- in controlled components value is changed/updated by state and uncontrolled by event handlers
@@ -64,7 +64,7 @@ if other states apart fron name change setItem won't be called
 If left empty it's like never use useEffect with any state with useEffect
 The state in the dependency array is an object that is compared on the render with the previous state with object comparation. If it's the same won't run useEffect, otherwise yes.
 
-custom hooks: external function called inside the hook whose name starts with ”use”.
+Custom hooks: external function called inside the hook whose name starts with ”use”.
 If we have different functions inside the compoenent method we can externilize those, even useEffect:
 
 ```
@@ -104,6 +104,12 @@ function Greeting({ initialCount= 0 }) {
   }
 ```
 
+Setting up a callback inside useState makes the setting of the state as lazy, as it compares the states and doesn't change it if it's the same.
+
+Getting the error React Hook ... is called in function ... which is neither a React function component or custom React Hook function?
+It's because of a React convention, it just means that your function doesn't start with use. Yes, that's it! A custom hook must start with use!
+So, instead of syncLocalStorageWithState, we call it useLocalStorageWithState.
+
 useLocalStorageWithState should have the same use as the useState hook, so it can return an array like useState, and we can store in a same array. So we have created a customed useState hook that does other stuff as well.
 We pass as well count and initialCount as parameters `useLocalStorageWithState(count, initialCount)` and then making useLocalStorageWithState more generic, receiving as arguments `key, defaultValue` , so the method can be reused freely and not stay chained to a count state. The same applies to the state. We can set [state, setState] and return the same.
 Having two arguments means that also useEffect should have two in the dependency array.
@@ -114,14 +120,15 @@ Having two arguments means that also useEffect should have two in the dependency
   - if present, JSON parse it and return the result
   - if not, return the default value
 
-Thant's for setting the state; for making the changes (useEffect), in this case for creating/editing the local storage, once the state changes we can just stringify whatever the state will be and store it.
+That's for setting the state; for making the changes (useEffect), in this case for creating/editing the local storage, once the state changes we can just stringify whatever the state will be and store it.
+Serialize will be for stringify the JSON, while deserialize for parsing it.
 
 In case as argument of useLocalStorageWithState, instead of a number, we'll pass a function, it's possible to create a check to return the results of another function.
 `const [name, setName] = useLocalStorageWithState('name', complexCounting() )` --> pass a function as default value
 `return typeof defaultValue === 'function' ? defaultValue() : defaultValue;` --> return to useState the result of the method
 
-Then it comes the part that was beyond my imagination. The case is what if somebody wants to pass another value to the 'key'? Now it's passed 'count' as string, but maybe somebody will change it.
-There's no direct way to change the state of the key, so what is done is store the key into a var that won't trigger the render using useRef. Following that, in useEffect we can compare the old key with the new one.
+Then it comes the complicated part. The case is what if somebody wants to pass another value to the 'key'? Now it's passed 'count' as string, but maybe somebody will change it.
+There's no direct way to change the state of the key, so what is done is store the key into a var that won't trigger the render, using useRef. Following that, in useEffect we can compare the old key with the new one.
 
 According to the docs:
 
@@ -178,4 +185,50 @@ const [animal, setAnimal] = React.useState('')
       <FavoriteAnimal animal={animal} onAnimalChange={event => setAnimal(event.currentTarget.value)} />
       <Display animal={animal} />
   )
+```
+
+- set local storage is a side effect as it's an async function, so it's required to be inside useEffect
+
+## 4 - Manipulating the DOM via React
+
+As there's no direct access to the DOM via React, this can be done via Refs
+
+```
+function MyDiv() {
+  const myDivRef = React.useRef()
+  React.useEffect(() => {
+    const myDiv = myDivRef.current
+    // myDiv is the div DOM node!
+    console.log(myDiv)
+    // DO some action
+    return // cancel events at the unmounting of the component (garbage collected)
+  }, [])
+  return <div ref={myDivRef}>hi</div>
+}
+```
+
+Once the component is mounted, useEffect will run and store into the myDiv const the current value of the DOM node of the div.
+In this case we leave an empty dependency array as it doesn't depend on the state of the app, so it happens once only.
+
+## 5 - HTTP requests
+
+One has to be careful in calling async functions inside useEffect, because it can't be done directly as they'll return promises instead of data or the results.
+It has to be done via callback, either inside the useEffect, of externalizing it.
+
+```
+React.useEffect(() => {
+  async function effect() {   // creating inside the callback the async method
+    const result = await doSomeAsyncThing() // call the async function
+  }
+  effect()  // calling the method as callback (so no promise will return, but the actual results)
+})
+```
+
+The other way is creating the function outside useEffect and calling it inside as callback
+
+```
+React.useEffect(() => {
+  doSomeAsyncThing().then(result => {
+  })
+})
 ```
