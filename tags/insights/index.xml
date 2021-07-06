@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Wed, 02 Dec 2020 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 06 Jul 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/tags/insights/index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/what-learnt-in-first-four-months-self-taught-developer</guid>
+    <title>What I learnt in my first six months as a working (self-taught) developer</title>
+    <link>https://buaiscia.github.io/blog/what-learnt-in-first-four-months-self-taught-developer</link>
+    <description></description>
+    <pubDate>Tue, 06 Jul 2021 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>insights</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/how-transitioned-from-humanistic-to-tech-and-helped</guid>
     <title>How I transitioned from humanistic jobs to tech and development and why it is possible to start from the basics.</title>
