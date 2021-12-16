@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Tue, 06 Jul 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 15 Dec 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/tags/insights/index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/how-passed-from-junior-to-intermediate-dev-one-year</guid>
+    <title>How I passed from Junior to Intermediate developer in one year</title>
+    <link>https://buaiscia.github.io/blog/how-passed-from-junior-to-intermediate-dev-one-year</link>
+    <description>Learning from going above junior is not easy. This is why I think I did it and what I could learn in this passage</description>
+    <pubDate>Wed, 15 Dec 2021 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>insights</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/what-learnt-in-first-six-months-self-taught-developer</guid>
     <title>What I learnt in my first six months as a working (self-taught) developer</title>
