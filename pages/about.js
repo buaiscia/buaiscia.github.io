@@ -31,11 +31,11 @@ export default function About() {
               <a
                 // style={{ textColor: '#0ea5e9' }}
                 className="text-red-500 hover:text-blue-500"
-                href="https://www.24i.com"
+                href="https://www.moravio.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                24i
+                Moravio
               </a>
             </div>
             <div className="flex pt-6 space-x-3">
@@ -52,22 +52,25 @@ export default function About() {
             </p>
             <p>
               Back in Europe my love for IT rised again, and during my years as application support
-              engineer I self learnt development, working on personal and professional projects
+              engineer I learnt development by myself, working on personal and professional projects
               (automation webtools).
             </p>
             <p>
               At the moment I'm employed as fullstack software engineer where I develop using a
-              Javascript/Typescript tech stack for frontend and backend (NodeJS), plus serverless
-              services.
+              Javascript/Typescript tech stack for frontend and backend, plus serverless services.
             </p>
             <p>
               In the little personal free time I try to help other want-to-be developers and write
               about what I learn.
             </p>
             <h4>On the web</h4>
-            🛠{' '}
+            🛠
             <a
-              style={{ textDecorationLine: 'line-through', textDecorationStyle: 'solid' }}
+              style={{
+                textDecorationLine: 'line-through',
+                textDecorationStyle: 'solid',
+                marginLeft: '10px',
+              }}
               href="http://www.alexbuaiscia.com"
               target="__blank"
             >
@@ -75,24 +78,33 @@ export default function About() {
             </a>{' '}
             Under reconstruction (without rush)
             <br />
-            🛠{' '}
-            <a href="https://github.com/buaiscia" target="__blank">
+            🛠
+            <a href="https://github.com/buaiscia" target="__blank" style={{ marginLeft: '10px' }}>
               My Github repositories
             </a>
             <br />
-            🛠{' '}
-            <a href="https://www.linkedin.com/in/alex-buaiscia/" target="__blank">
+            🛠
+            <a
+              href="https://www.linkedin.com/in/alex-buaiscia/"
+              target="__blank"
+              style={{ marginLeft: '10px' }}
+            >
               My Linkedin profile
             </a>
             <br />
-            🛠{' '}
-            <a href="https://twitter.com/AlexBuaiscia" target="__blank">
+            🛠
+            <a
+              href="https://twitter.com/AlexBuaiscia"
+              target="__blank"
+              style={{ marginLeft: '10px' }}
+            >
               My Twitter where I can be reached
             </a>
             <ul>
               <li>HTML5 / CSS3</li>
               <li>Javascript</li>
               <li>React</li>
+              <li>NextJS</li>
               <li>NodeJS</li>
               <li>Express / Restify</li>
               <li>Typescript</li>
@@ -104,7 +116,6 @@ export default function About() {
               <li>EJS</li>
               <li>Linux/Unix</li>
               <li>A little of GraphQL</li>
-              <li>Some Python and Java</li>
               <li>SOAP/REST services/APIs</li>
             </ul>
           </div>
