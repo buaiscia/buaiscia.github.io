@@ -13,6 +13,14 @@ In 2020 I started my transition into development. I wrote two posts about it, th
 
 After one year and half, here I am. I learned a ton, and I'm still learning a ton. What happened then, that let me declare that I'm not a junior anymore? Well, follow my story here below :)
 
+### Table of Content
+
+- [6 months into the job](#6-months-into-the-job)
+- [10 months into the job](#10-months-into-the-job)
+- [One month into the new job](#one-month-into-the-new-job)
+- [Six months into the new job (1 year and half since started)](#six-months-into-the-new-job-1-year-and-half-since-started)
+- [Few more lessons that I gathered in all this time](#few-more-lessons-that-i-gathered-in-all-this-time)
+
 ## 6 months into the job
 
 To sum up the post that I wrote about, experience comes with practice. In the first six months I felt overwhelmed, but never too much under pressure as my colleagues (senior devs) were very supportive. I had to learn tools, best practices and so on. I did that, but of course I was not mastering any of those.
@@ -60,14 +68,14 @@ The problem is that for reaching it I had to make a very big effort for the whol
 
 ## Six months into the new job (1 year and half since started)
 
-The past six months brought up new challanges. I was involved in 3 projects: the first one was temporary and lasted few weeks (just as maintainance); the second one was supposed to last 3 months but it was almost 5; and the last one is where I'm actually involved.
+The past six months brought up new challenges. I was involved in 3 projects: the first one was temporary and lasted few weeks (just as maintenance); the second one was supposed to last 3 months but it was almost 5; and the last one is where I'm actually involved.
 
-That's one advantage of working for a smaller company that continously receives new clients, comparing to tech giants: I got to work with three totally different frameworks and tech stacks in less than a year. This widened a lot my knowledge. Or to better say, it helped me understand the common thinking allowing to work with whatever you're given.
+That's one advantage of working for a smaller company that continuously receives new clients, comparing to tech giants: I got to work with three totally different frameworks and tech stacks in less than a year. This widened a lot my knowledge. Or to better say, it helped me understand the common thinking allowing to work with whatever you're given.
 
 Another important thing that I learned was caused by the second project. It was really badly managed. We were just two developers for frontend and backend for a huge promised product to finish in three months.
 Here are the signs that the project was ill-fated since the beginning:
 
-- it was overpromised before devs came in to work with it
+- it was over-promised before devs came in to work with it
 - even soon after we came in and had the first meetings, we had to take decisions on its delivery based on design drafts (yes, not even stories, features description or similar)
 - as it seemed from the drafts ok, we decided to give it a go
 - after we started working, the real designs and tickets came in and...surprise surprise, the scope of the project raised twice or even thrice
@@ -81,17 +89,17 @@ The situation changed a little when the developers (the two of us plus another e
 So from this phase, and making a comparison with my actual project where I have a good leadership, PO and scrum master, I took the following lessons:
 
 - I was (am?) somehow bad at estimating a ticket, imagine a whole project. Committing to such an effort with almost no information was a bad mistake
-- After I started, I was underestimating for a long time the effort on the tickets/features. There was a lot of bad pshychological pressure, so maybe I'm not 100% guilty of that.
+- After I started, I was underestimating for a long time the effort on the tickets/features. There was a lot of bad psychological pressure, so maybe I'm not 100% guilty of that.
 - When a PO or project manager push you for delivering something in a not deliverable timeframe, push back. It's the duty of a developer to tell them how much time they need to do quality work, because the PO or the project manager usually don't know how to code. If they won't be happy, it's better to be unhappy before and more satisfied at the end.
-- As in that case, given the type of project, it happens that there is no time to create tests or a product of more quality. It's the client project so if the company sold it this way, it's not your problem.
+- As in that case, given the type of project, it happens that there is no time to create tests or a product of more quality. It's the client project so if the company sold it this way, it's not your problem. Just be sure that the client knows.
 - Don't get stressed after bad management decisions. It's their fault, not yours. But take your time to speak out.
 
 ## Few more lessons that I gathered in all this time
 
-- Learn how to read docs instead of stackoverflow and random googling (I know that we all do it anyway :) )
+- Learn how to read docs instead of Stack Overflow and random googling (I know that we all do it anyway :) )
 - Learn how to divide logic in the backend from the frontend (basically, everything in the BE as the FE should be just a dummy fetching and visualizing)
 - Learn how to give priorities. This includes times of switching between projects, but it's valid also in life.
-- It's really not necessary to learn new tech and code off working hours. I took time to shut off the urge to do that, but I feel better. I learn what I need for the job (or more if I want to expand my clients)
+- It's really not necessary to learn new tech and code off working hours. It took time to shut off the urge to do that, but I feel better. I learn what I need for the job (or more if I want to expand my clients)
 - Write down your points every week of what you've accomplished and tickets you've worked on. I took this advice from Randall Kann books, and in some cases worked very well for the evaluation.
 - Learn about abstractions and all principles
 - Learn how to work in different environments (dev, test, prod etc)
