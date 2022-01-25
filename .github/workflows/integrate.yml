@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+env:
+  NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ env.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
