@@ -1,23 +1,33 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
+  connectGTM() {
+    return (
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      ></script>
+    )
+  }
+
+  renderGTMSnippet() {
+    return (
+      <script
+        async
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');`,
+        }}
+      />
+    )
+  }
   render() {
     return (
       <Html lang="en">
         <Head>
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-          ></script>
-          <script
-            async
-            dangerouslySetInnerHTML={{
-              __html: `window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS});`,
-            }}
-          />
+          {this.connectGTM()}
+          {this.renderGTMSnippet()}
           <link
             rel="apple-touch-icon"
             sizes="180x180"
