@@ -43,8 +43,8 @@
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "@next/bundle-analyzer": "^10.0.0",
     "@svgr/webpack": "^5.5.0",
     "eslint": "^7.17.0",
@@ -65,9 +65,16 @@
     "remark-stringify": "9.0.0",
     "responsive-loader": "^2.3.0",
     "responsive-loader-sharp": "^0.8.0",
-    "sharp": "^0.26.3",
+    "sharp": "^0.29.3",
     "unified": "9.2.0",
     "unist-util-visit": "2.0.3"
+  },
+  "resolutions": {
+    "simple-get": "4.0.1",
+    "trim": "0.0.3",
+    "trim-newlines": "3.0.1",
+    "glob-parent": "5.1.2",
+    "prismjs": "1.25.0"
   },
   "husky": {
     "hooks": {
