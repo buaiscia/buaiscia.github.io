@@ -6,6 +6,18 @@ tags: ['react', 'web development', 'epic react']
 summary: "A guide of what I'm learning on the Epic React workshopds by Kent Dodds. This is the first one: fundamentals"
 ---
 
+### Table of Content
+
+- [Intro](#intro)
+- [01: Basic JavaScript-rendered](#01-basic-javascript-rendered)
+- [02: Intro to raw React APIs](#02-intro-to-raw-react-apis)
+- [03: Using JSX](#03-using-jsx)
+- [04: Creating custom components](#04-creating-custom-components)
+- [05: Styling](#05-styling)
+- [06: Forms](#06-forms)
+- [07: Rendering Arrays](#07-rendering-arrays)
+- [Conclusion](#conclusion)
+
 ## Intro
 
 At this moment in my career, I'm a Javascript fullstack developer in the early stages. I've a good knowledge of Javascript, however React gives me sometimes a little more than a headache to understand deeply. I grew up in my learning with class based components, so later, when hooks were introduced, I found a little difficult to transition to this new way of writing React. That's why I wanted this course.
@@ -15,15 +27,11 @@ As part of my learning process, I'm going to note down not everything, but what 
 Of course you will find many more details and, well, the workshop itself directly in <a href="https://epicreact.dev">epicreact.dev</a>
 I hope this will be useful to somebody else apart from me, and forgive my mistakes in English (not a native speaker).
 
-<br />
-
 ## 01: Basic JavaScript-rendered
 
 In the first exercise, it's necessary to make some DOM manipulation with plain Javascript. As I'm using this method in my daily work, I had no difficulties in the first part. As a matter of fact, I'm learning a lot into transforming a codebase that is heavily relying on jQuery into plain Javascript.
 
 However, I did have to do some thinking on the additional exercise, as I'm not used to work with the root element of the body. So I personally didn't know -but now that I know, it makes sense - that there's a body object inside the document object. I won't give here the solution, but it's an important reminder to always check the parent elements... what are they hiding inside :)
-
-<br />
 
 ## 02: Intro to raw React APIs
 
@@ -43,24 +51,22 @@ The second thing is that createElement has three - or more - arguments that can 
 
 As a matter of fact, the children property doesn't even have to be defined inside the second argument of createElement, but can be listed at the end of the method.
 
-<br />
-
 ## 03: Using JSX
 
 The third exercise was about creating simple JSX elements that Babel will transform in normal JS with React.createElement. As it's basically almost a reverse engineering of the previous exercises, it was not difficult. However, it was interesting the use of the spread operator inside a div element, which createElement puts in the correct position:
 
-```
-const className = 'myClass';
-const children = 'this is my text';
+```javascript
+const className = 'myClass'
+const children = 'this is my text'
 const props = { children, className }
-element = <div {...props}/>
+element = <div {...props} />
 ```
 
 It will create a div with its own class and the innertext as children.
 
 Another interesting point in the video is about prioritazion of position using the spread operator. Supposing that we have the above props, but then we want to override the className with another name, we have to place the spread props before. In synthesis, the right argument will always override the left ones.
 
-```
+```javascript
 <div {...props, className='secondClass'} /> // <div className="secondClass" />
 <div {className='secondClass', ...props} /> // <div className="myClass" />
 ```
@@ -69,12 +75,12 @@ Another interesting point in the video is about prioritazion of position using t
 
 So here we go finally to start creating components. The first part consists in creating a function that basically returns a div, so instead of repeating div div in the rendered element, we just pass the function with the string as "children". One thing that I knew but forgot explicitly is that if I pass a parameter to the function as an object, the argument must be an object as well. So:
 
-```
-helloFunction = ({children}) => {
+```javascript
+helloFunction = ({ children }) => {
   return <div>{children}</div>
 }
 
-helloFunction({ children: 'Hello' });
+helloFunction({ children: 'Hello' })
 ```
 
 The next point was to implement this function as an element:
@@ -83,7 +89,7 @@ The next point was to implement this function as an element:
 
 and finally incorporate it in the element itself, which will be taken into ReactDom.render:
 
-```
+```javascript
 const element = (
   ...
   {myElement}
@@ -101,11 +107,11 @@ Next, it was the time of implementing propTypes for typechecking, giving the sam
 
 `<script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>`
 
-```
+```javascript
 HelloFunction.propTypes = {
-      greeting: PropTypes.string,
-      subject: PropTypes.string,
-    }
+  greeting: PropTypes.string,
+  subject: PropTypes.string,
+}
 ```
 
 I'm not getting either a personalized message, but the standard warning is understandable enough
@@ -116,16 +122,14 @@ Invalid prop `subject` of type `number` supplied to `Message`, expected `string`
 
 Ah, here we go, in the next exercise there's the implementation of the library... ooooops, I went a little over head. But good point, to implement also 'isRequired'
 
-```
+```javascript
 HelloFunction.propTypes = {
-      greeting: PropTypes.string.isRequired,
-      subject: PropTypes.string.isRequired,
-    }
+  greeting: PropTypes.string.isRequired,
+  subject: PropTypes.string.isRequired,
+}
 ```
 
 Anyway, Typescript rules!
-
-<br />
 
 ## 05: Styling
 
@@ -140,7 +144,7 @@ Second note: as usual I overcomplicated things. As the size property passed woul
 adding that to a ternary operator in case it's the prop is not present.
 What I did instead was a nested ternary operator with an object created with the classes names inside. Much more complicated, although it was working 😁
 
-```
+```javascript
 const sizes = {
   small: 'box--small',
   medium: 'box--medium',
@@ -177,15 +181,13 @@ In the next credit, it was needed to create a controlled input. A controlled inp
 Then, we can set the state at the top of the component: `const [username, setUsername] = useState('');`
 And finally, use that state to change the value of the input in the handleChange function. In this case, transforming every key to lowercase:
 
-```
-const { value } = event.target;
-setUsername(value.toLowerCase());
+```javascript
+const { value } = event.target
+setUsername(value.toLowerCase())
 ```
 
 So the flow is the following:
 input from user --> update input state --> transforming input state -> sending the state as value of the input --> input appears on screens.
-
-<br />
 
 ## 07: Rendering Arrays
 

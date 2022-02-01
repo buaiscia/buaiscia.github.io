@@ -70,7 +70,7 @@ Of course, this wouldn't have been possible if I wouldn't have the most understa
     one day at the time.
   </li>
   <li>
-    You can make some speficic skills-targets. For example, this week I'll focus on Wepack, so at
+    You can make some specific skills-targets. For example, this week I'll focus on Webpack, so at
     the end I'll know how to set it up. Or, as another example, today I'll take my time to figure
     out how to rebase the dev branch with my branch correctly, resolving all merge conflicts. When
     you are a junior, you can tell your colleagues that you'll take some time to understand how to
