@@ -1,10 +1,6 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
-
 const ghPages = process.env.DEPLOY_TARGET === 'gh-pages'
 
-module.exports = withBundleAnalyzer({
+module.exports = {
   images: {
     loader: 'cloudinary',
     path: 'https://res.cloudinary.com/buaiscia/image/upload/v1614031509/techblog/',
@@ -51,4 +47,4 @@ module.exports = withBundleAnalyzer({
     }
     return config
   },
-})
+}
