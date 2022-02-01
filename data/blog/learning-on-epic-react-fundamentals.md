@@ -3,7 +3,7 @@ title: Epic React. Fundamentals. What I'm learning.
 date: '2020-10-30'
 draft: false
 tags: ['react', 'web development', 'epic react']
-summary: "A guide of what I'm learning on the Epic React workshopds by Kent Dodds. This is the first one: fundamentals"
+summary: "A guide of what I'm learning on the Epic React workshops by Kent Dodds. This is the first one: fundamentals"
 ---
 
 ### Table of Content
