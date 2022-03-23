@@ -21,6 +21,16 @@
   </item>
 
   <item>
+    <guid>https://buaiscia.github.io/blog/learning-on-epic-react-hooks-useState-useEffect</guid>
+    <title>Epic React. Hooks. UseState, useEffect. What I'm learning.</title>
+    <link>https://buaiscia.github.io/blog/learning-on-epic-react-hooks-useState-useEffect</link>
+    <description>A guide of what I'm learning on the Epic React workshops by Kent Dodds. This is the second one: useState + useEffect</description>
+    <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>react</category><category>web development</category><category>epic react</category>
+  </item>
+
+  <item>
     <guid>https://buaiscia.github.io/blog/what-learnt-in-first-six-months-self-taught-developer</guid>
     <title>What I learnt in my first six months as a working (self-taught) developer</title>
     <link>https://buaiscia.github.io/blog/what-learnt-in-first-six-months-self-taught-developer</link>
