@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Wed, 15 Dec 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 22 Jul 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/july-2022-tips</guid>
+    <title>Developer Tips - July 2022</title>
+    <link>https://buaiscia.github.io/blog/july-2022-tips</link>
+    <description>Development tips for the month of July: Formik forms validation errors</description>
+    <pubDate>Fri, 22 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>react</category><category>tips</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/how-passed-from-junior-to-intermediate-dev-one-year</guid>
     <title>How I passed from Junior to Intermediate developer in one year</title>
@@ -18,6 +28,16 @@
     <pubDate>Wed, 15 Dec 2021 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
     <category>insights</category>
+  </item>
+
+  <item>
+    <guid>https://buaiscia.github.io/blog/learning-on-epic-react-hooks-useState-useEffect</guid>
+    <title>Epic React. Hooks. UseState, useEffect. What I'm learning.</title>
+    <link>https://buaiscia.github.io/blog/learning-on-epic-react-hooks-useState-useEffect</link>
+    <description>A guide of what I'm learning on the Epic React workshops by Kent Dodds. This is the second one: useState + useEffect</description>
+    <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>react</category><category>web development</category><category>epic react</category>
   </item>
 
   <item>
@@ -64,7 +84,7 @@
     <guid>https://buaiscia.github.io/blog/learning-on-epic-react-fundamentals</guid>
     <title>Epic React. Fundamentals. What I'm learning.</title>
     <link>https://buaiscia.github.io/blog/learning-on-epic-react-fundamentals</link>
-    <description>A guide of what I'm learning on the Epic React workshopds by Kent Dodds. This is the first one: fundamentals</description>
+    <description>A guide of what I'm learning on the Epic React workshops by Kent Dodds. This is the first one: fundamentals</description>
     <pubDate>Fri, 30 Oct 2020 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
     <category>react</category><category>web development</category><category>epic react</category>
