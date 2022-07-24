@@ -11,7 +11,7 @@ const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
 
-  return { props: { posts } }
+  return { props: { posts, revalidate: 10 } }
 }
 
 export default function Home({ posts }) {
