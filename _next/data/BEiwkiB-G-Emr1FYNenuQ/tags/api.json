@@ -1,1 +1,0 @@
-{"pageProps":{"posts":[{"title":"Mock an Axios call with a JSON file.","date":"2020-11-13","draft":false,"tags":["nodejs","web development","api"],"summary":"How to avoid test calling a third party API with Axios using a mock JSON file","slug":"sending-mock-json-response-axios"}],"tag":"api"},"__N_SSG":true}
