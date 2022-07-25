@@ -7,13 +7,12 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
-import { avatarImg } from './AuthorLayout'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
+// const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+// const discussUrl = (slug) =>
+//   `https://mobile.twitter.com/search?q=${encodeURIComponent(
+//     `${siteMetadata.siteUrl}/blog/${slug}`
+//   )}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -59,7 +58,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     <li className="flex items-center space-x-2" key={author.name}>
                       {author.avatar && (
                         <Image
-                          src={avatarImg}
+                          src={author.avatar}
                           width="38px"
                           height="38px"
                           alt="avatar"
