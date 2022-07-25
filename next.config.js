@@ -2,6 +2,8 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
+const ghPages = process.env.DEPLOY_TARGET === 'gh-pages'
+
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
@@ -58,6 +60,11 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
+  assetPrefix: ghPages ? '/buaiscia.github.io/' : '',
+  images: {
+    loader: 'cloudinary',
+    path: '/',
+  },
   async headers() {
     return [
       {
@@ -65,6 +72,15 @@ module.exports = withBundleAnalyzer({
         headers: securityHeaders,
       },
     ]
+  },
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' },
+      '/blog': { page: '/blog' },
+      '/tags': { page: '/tags' },
+      '/about': { page: '/about' },
+      '/404': { page: '/404' },
+    }
   },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
