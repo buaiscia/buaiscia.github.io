@@ -61,7 +61,7 @@ module.exports = withBundleAnalyzer({
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   images: {
-    loader: 'default',
+    loader: 'imgix',
     path: '/',
   },
   async headers() {
