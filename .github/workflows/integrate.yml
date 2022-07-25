@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_PUBLIC_GOOGLE_ANALYTICS: ${{ secrets.NEXT_PUBLIC_GOOGLE_ANALYTICS }}
-      NEXT_PUBLIC_BASE_PATH: /buaiscia.github.io/
+      NEXT_PUBLIC_BASE_PATH: /buaiscia.github.io
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.1
