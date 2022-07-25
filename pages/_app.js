@@ -1,25 +1,31 @@
 import '@/css/tailwind.css'
-import { MDXProvider } from '@mdx-js/react'
+import '@/css/prism.css'
+import 'katex/dist/katex.css'
+
+import '@fontsource/inter/variable-full.css'
+
 import { ThemeProvider } from 'next-themes'
-import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
 
-import { SEO } from '@/components/SEO'
+import siteMetadata from '@/data/siteMetadata'
+import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
-import MDXComponents from '@/components/MDXComponents'
+import { ClientReload } from '@/components/ClientReload'
+
+const isDevelopment = process.env.NODE_ENV === 'development'
+const isSocket = process.env.SOCKET
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
-      <MDXProvider components={MDXComponents}>
-        <Head>
-          <meta content="width=device-width, initial-scale=1" name="viewport" />
-        </Head>
-        <DefaultSeo {...SEO} />
-        <LayoutWrapper>
-          <Component {...pageProps} />
-        </LayoutWrapper>
-      </MDXProvider>
+    <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+      <Head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </Head>
+      {isDevelopment && isSocket && <ClientReload />}
+      <Analytics />
+      <LayoutWrapper>
+        <Component {...pageProps} />
+      </LayoutWrapper>
     </ThemeProvider>
   )
 }

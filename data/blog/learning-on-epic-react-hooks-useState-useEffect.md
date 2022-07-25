@@ -5,8 +5,11 @@ draft: false
 tags: ['react', 'web development', 'epic react']
 summary: "A guide of what I'm learning on the Epic React workshops by Kent Dodds. This is the second one: useState + useEffect"
 ---
-
-## Back into React
+- [Back into Epic React](#back-into-epic-react)
+- [1 - useState](#1---usestate)
+- [2 - useEffect](#2---useeffect)
+- [Other notes](#other-notes)
+## Back into Epic React
 
 After a long break and quite more experience, I managed to get back to EpicReact. This is the second chapter of the series. Here's the link to the first one:
 
@@ -121,7 +124,7 @@ function Greeting({ initialCount= 0 }) {
   }
 ```
 
-#### Other notes
+## Other notes
 
 - Setting up a callback inside useState makes the setting of the state as lazy, as it compares the states and doesn't change it if it's the same.
 

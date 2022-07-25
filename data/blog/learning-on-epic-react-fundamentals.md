@@ -64,7 +64,7 @@ element = <div {...props} />
 
 It will create a div with its own class and the innertext as children.
 
-Another interesting point in the video is about prioritazion of position using the spread operator. Supposing that we have the above props, but then we want to override the className with another name, we have to place the spread props before. In synthesis, the right argument will always override the left ones.
+Another interesting point in the video is about prioritization of position using the spread operator. Supposing that we have the above props, but then we want to override the className with another name, we have to place the spread props before. In synthesis, the right argument will always override the left ones.
 
 ```javascript
 <div {...props, className='secondClass'} /> // <div className="secondClass" />

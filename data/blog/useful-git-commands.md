@@ -68,9 +68,11 @@ git merge branchname
 
 -- _How to force revert after a rebase_
 
-`git reflog` _check the HEAD{number} before the rebase starts_
-`git reset --hard HEAD{number}`
+```javacript
+  git reflog` ## check the HEAD{number} before the rebase starts
+  git reset --hard HEAD{number}
 
+```
 -- _Wrong name branch? No problem: delete the one in GH, rename the local one and repush it_
 
 ```
