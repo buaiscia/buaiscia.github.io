@@ -10,7 +10,7 @@ const siteMetadata = {
   // siteLogo: '/static/images/logo.png',
   siteLogo: '',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/javascript-language.png',
   // email: 'address@yoursite.com',
   github: 'https://github.com/buaiscia',
   twitter: 'https://twitter.com/AlexBuaiscia',
