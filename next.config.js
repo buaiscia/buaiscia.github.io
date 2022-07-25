@@ -63,7 +63,7 @@ module.exports = withBundleAnalyzer({
   basePath: ghPages ? '/buaiscia.github.io/' : '',
   assetPrefix: ghPages ? '/buaiscia.github.io/' : '',
   images: {
-    loader: 'imgix',
+    loader: 'akamai',
     path: '/',
   },
   async headers() {
