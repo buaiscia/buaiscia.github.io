@@ -14,7 +14,7 @@
     <guid>https://buaiscia.github.io/blog/july-2022-tips</guid>
     <title>Developer Tips - July 2022</title>
     <link>https://buaiscia.github.io/blog/july-2022-tips</link>
-    <description>Development tips for the month of July: Formik forms validation errors</description>
+    <description>Development tips for the month of July: Formik forms validation errors, Memoize a React component</description>
     <pubDate>Fri, 22 Jul 2022 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
     <category>web development</category><category>react</category><category>tips</category>
