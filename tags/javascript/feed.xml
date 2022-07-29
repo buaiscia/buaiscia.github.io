@@ -11,13 +11,13 @@
       <atom:link href="https://buaiscia.github.io/tags/javascript/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://buaiscia.github.io/blog/creating-events-and-setting-listeners</guid>
+    <guid>https://buaiscia.github.io/blog/tips/creating-events-and-setting-listeners</guid>
     <title>Creating events and setting listeners in Javascript</title>
-    <link>https://buaiscia.github.io/blog/creating-events-and-setting-listeners</link>
+    <link>https://buaiscia.github.io/blog/tips/creating-events-and-setting-listeners</link>
     <description>How to add an event and how to create a listener to that event</description>
     <pubDate>Wed, 02 Sep 2020 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
-    <category>Javascript</category><category>Web development</category>
+    <category>Javascript</category><category>Web development</category><category>tips</category>
   </item>
 
     </channel>

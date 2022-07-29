@@ -21,39 +21,51 @@
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/creating-events-and-setting-listeners</loc>
+    <loc
+      >https://buaiscia.github.io/blog/career/how-passed-from-junior-to-intermediate-dev-one-year</loc
+    >
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/how-passed-from-junior-to-intermediate-dev-one-year</loc>
+    <loc
+      >https://buaiscia.github.io/blog/career/how-transitioned-from-humanistic-to-tech-and-helped</loc
+    >
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/how-transitioned-from-humanistic-to-tech-and-helped</loc>
+    <loc
+      >https://buaiscia.github.io/blog/career/what-learnt-in-first-six-months-self-taught-developer</loc
+    >
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/july-2022-tips</loc>
+    <loc>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-fundamentals</loc>
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/learning-on-epic-react-fundamentals</loc>
+    <loc
+      >https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-hooks-useState-useEffect</loc
+    >
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/learning-on-epic-react-hooks-useState-useEffect</loc>
+    <loc>https://buaiscia.github.io/blog/tips/creating-events-and-setting-listeners</loc>
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/sending-mock-json-response-axios</loc>
+    <loc>https://buaiscia.github.io/blog/tips/memoize-react-component</loc>
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/useful-git-commands</loc>
+    <loc>https://buaiscia.github.io/blog/tips/sending-errors-formik-form</loc>
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/what-learnt-in-first-six-months-self-taught-developer</loc>
+    <loc>https://buaiscia.github.io/blog/tips/sending-mock-json-response-axios</loc>
+  </url>
+
+  <url>
+    <loc>https://buaiscia.github.io/blog/tips/useful-git-commands</loc>
   </url>
 
   <url>
@@ -61,7 +73,15 @@
   </url>
 
   <url>
+    <loc>https://buaiscia.github.io/tags/career</loc>
+  </url>
+
+  <url>
     <loc>https://buaiscia.github.io/tags/epic-react</loc>
+  </url>
+
+  <url>
+    <loc>https://buaiscia.github.io/tags/formik</loc>
   </url>
 
   <url>

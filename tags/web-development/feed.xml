@@ -7,23 +7,33 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Fri, 22 Jul 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 27 Jul 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/tags/web-development/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://buaiscia.github.io/blog/july-2022-tips</guid>
-    <title>Developer Tips - July 2022</title>
-    <link>https://buaiscia.github.io/blog/july-2022-tips</link>
-    <description>Development tips for the month of July: Formik forms validation errors, Memoize a React component</description>
-    <pubDate>Fri, 22 Jul 2022 00:00:00 GMT</pubDate>
+    <guid>https://buaiscia.github.io/blog/tips/memoize-react-component</guid>
+    <title>Memoize a React component</title>
+    <link>https://buaiscia.github.io/blog/tips/memoize-react-component</link>
+    <description>Using React.memo to memoize a React component</description>
+    <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
     <category>web development</category><category>react</category><category>tips</category>
   </item>
 
   <item>
-    <guid>https://buaiscia.github.io/blog/learning-on-epic-react-hooks-useState-useEffect</guid>
+    <guid>https://buaiscia.github.io/blog/tips/sending-errors-formik-form</guid>
+    <title>Sending errors through a Formik form</title>
+    <link>https://buaiscia.github.io/blog/tips/sending-errors-formik-form</link>
+    <description>Sending validation errors through Formik forms</description>
+    <pubDate>Fri, 22 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>react</category><category>formik</category><category>tips</category>
+  </item>
+
+  <item>
+    <guid>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-hooks-useState-useEffect</guid>
     <title>Epic React. Hooks. UseState, useEffect. What I&#39;m learning.</title>
-    <link>https://buaiscia.github.io/blog/learning-on-epic-react-hooks-useState-useEffect</link>
+    <link>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-hooks-useState-useEffect</link>
     <description>A guide of what I&#39;m learning on the Epic React workshops by Kent Dodds. This is the second one: useState + useEffect</description>
     <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
@@ -31,29 +41,19 @@
   </item>
 
   <item>
-    <guid>https://buaiscia.github.io/blog/useful-git-commands</guid>
-    <title>Useful GIT commands</title>
-    <link>https://buaiscia.github.io/blog/useful-git-commands</link>
-    <description>Useful commands to use in git in everyday working life</description>
-    <pubDate>Tue, 26 Jan 2021 00:00:00 GMT</pubDate>
-    <author>undefined (Alex Buaiscia)</author>
-    <category>git</category><category>web development</category>
-  </item>
-
-  <item>
-    <guid>https://buaiscia.github.io/blog/sending-mock-json-response-axios</guid>
+    <guid>https://buaiscia.github.io/blog/tips/sending-mock-json-response-axios</guid>
     <title>Mock an Axios call with a JSON file.</title>
-    <link>https://buaiscia.github.io/blog/sending-mock-json-response-axios</link>
+    <link>https://buaiscia.github.io/blog/tips/sending-mock-json-response-axios</link>
     <description>How to avoid test calling a third party API with Axios using a mock JSON file</description>
     <pubDate>Fri, 13 Nov 2020 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
-    <category>nodejs</category><category>web development</category><category>api</category>
+    <category>nodejs</category><category>web development</category><category>api</category><category>tips</category>
   </item>
 
   <item>
-    <guid>https://buaiscia.github.io/blog/learning-on-epic-react-fundamentals</guid>
+    <guid>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-fundamentals</guid>
     <title>Epic React. Fundamentals. What I&#39;m learning.</title>
-    <link>https://buaiscia.github.io/blog/learning-on-epic-react-fundamentals</link>
+    <link>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-fundamentals</link>
     <description>A guide of what I&#39;m learning on the Epic React workshops by Kent Dodds. This is the first one: fundamentals</description>
     <pubDate>Fri, 30 Oct 2020 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
@@ -61,13 +61,13 @@
   </item>
 
   <item>
-    <guid>https://buaiscia.github.io/blog/creating-events-and-setting-listeners</guid>
+    <guid>https://buaiscia.github.io/blog/tips/creating-events-and-setting-listeners</guid>
     <title>Creating events and setting listeners in Javascript</title>
-    <link>https://buaiscia.github.io/blog/creating-events-and-setting-listeners</link>
+    <link>https://buaiscia.github.io/blog/tips/creating-events-and-setting-listeners</link>
     <description>How to add an event and how to create a listener to that event</description>
     <pubDate>Wed, 02 Sep 2020 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
-    <category>Javascript</category><category>Web development</category>
+    <category>Javascript</category><category>Web development</category><category>tips</category>
   </item>
 
     </channel>

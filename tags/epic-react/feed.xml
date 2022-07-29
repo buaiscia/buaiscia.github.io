@@ -11,9 +11,9 @@
       <atom:link href="https://buaiscia.github.io/tags/epic-react/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://buaiscia.github.io/blog/learning-on-epic-react-hooks-useState-useEffect</guid>
+    <guid>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-hooks-useState-useEffect</guid>
     <title>Epic React. Hooks. UseState, useEffect. What I&#39;m learning.</title>
-    <link>https://buaiscia.github.io/blog/learning-on-epic-react-hooks-useState-useEffect</link>
+    <link>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-hooks-useState-useEffect</link>
     <description>A guide of what I&#39;m learning on the Epic React workshops by Kent Dodds. This is the second one: useState + useEffect</description>
     <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
@@ -21,9 +21,9 @@
   </item>
 
   <item>
-    <guid>https://buaiscia.github.io/blog/learning-on-epic-react-fundamentals</guid>
+    <guid>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-fundamentals</guid>
     <title>Epic React. Fundamentals. What I&#39;m learning.</title>
-    <link>https://buaiscia.github.io/blog/learning-on-epic-react-fundamentals</link>
+    <link>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-fundamentals</link>
     <description>A guide of what I&#39;m learning on the Epic React workshops by Kent Dodds. This is the first one: fundamentals</description>
     <pubDate>Fri, 30 Oct 2020 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
