@@ -3,7 +3,7 @@ title: What I learnt in my first six months as a working (self-taught) developer
 date: '2021-07-06'
 template: post
 draft: false
-tags: ['insights']
+tags: ['insights', 'career']
 summary: 'The first six months of a developer are maybe the most challenging. This is what I learnt. My mistakes and accomplishments, to become a better dev'
 ---
 

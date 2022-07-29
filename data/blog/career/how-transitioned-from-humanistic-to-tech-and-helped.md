@@ -2,7 +2,7 @@
 title: How I transitioned from humanistic jobs to tech and development and why it is possible to start from the basics.
 date: '2020-12-02'
 draft: false
-tags: ['insights']
+tags: ['insights', 'career']
 summary: 'Transitioning from literature and languages to tech was not easy. Making a career from basic roles to developer is possible, and even better sometimes.'
 ---
 

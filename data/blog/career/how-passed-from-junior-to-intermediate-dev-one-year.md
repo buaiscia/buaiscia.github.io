@@ -2,7 +2,7 @@
 title: How I passed from Junior to Intermediate developer in one year
 date: '2021-12-15'
 draft: false
-tags: ['insights']
+tags: ['insights', 'career']
 summary: 'Learning from going above junior is not easy. This is why I think I did it and what I could learn in this passage'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Useful GIT commands
 date: '2021-01-26'
-tags: ['git', 'web development']
+tags: ['git', 'tips']
 draft: false
 summary: 'Useful commands to use in git in everyday working life'
 ---

@@ -2,7 +2,7 @@
 title: Mock an Axios call with a JSON file.
 date: '2020-11-13'
 draft: false
-tags: ['nodejs', 'web development', 'api']
+tags: ['nodejs', 'web development', 'api', 'tips']
 summary: 'How to avoid test calling a third party API with Axios using a mock JSON file'
 ---
 

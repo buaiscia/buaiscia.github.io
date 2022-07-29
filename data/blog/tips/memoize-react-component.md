@@ -1,42 +1,10 @@
 ---
-title: Developer Tips - July 2022
-date: '2022-07-22'
+title: Memoize a React component
+date: '2022-07-27'
 draft: false
 tags: ['web development', 'react', 'tips']
-summary: 'Development tips for the month of July: Formik forms validation errors, Memoize a React component'
+summary: 'Using React.memo to memoize a React component'
 ---
-
-### Sending errors through a Formik form
-
-When we need to validate a Formik form (often with Yup) we can use the following method: validateForm.
-It returns a promise so we have to check if it resolves or not.
-However, the validation errors are sent directly inside the promise as an argument and not caught. So the promise is always resolved in this case.
-
-To pass the validation error, then, we have to pass the errors as an argument of the promise itself.
-
-```js
-  formik.validateForm({...})
-    .then((errors) => submit(formik, values, errors))
-```
-
-Then the errors can be checked and the logic can be written in the submit method.
-
-```js
-const submit = (formik, values, errors) => {...}
-```
-
-Bonus: here are the types (for TS users) for the 3 arguments above:
-
-```js
-formik: FormikContextType<FormikValues>
-values: FormikValues
-errors: FormikErrors<FormikValues>
-```
-
-[GitHub gist](https://github.com/buaiscia/Notes/blob/main/2022/07/22.md)
-
-
-### Memoize a React component
 
 Memoization is a feature in React. The library compares (in a shallow way) two versions of an object and, if they are the same, does not re-render (or recompile) it, creating an optimization in performance and memory.
 
@@ -77,5 +45,3 @@ This above will say: if the previous ID is different comparing to the next one, 
 In my case, it checks that the IDs are different, and don't do anything. But if they're the same, it'll allow the rerender. It's similar to how ShouldComponentUpdate was working, as we're giving the condition on when to rerender.
 
 So, to sum up, we're memoizing (not rerendering) this component the opposite way only when the IDs (keys) change. That means that when we open a student card it will rerender. But when we add more students, or we use other student cards, they won't rerender in the page, and we will be getting a performance improvement.
-
-[Github gist](https://github.com/buaiscia/Notes/blob/main/2022/07/27.md)

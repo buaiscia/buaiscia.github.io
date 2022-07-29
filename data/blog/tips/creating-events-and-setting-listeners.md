@@ -2,7 +2,7 @@
 title: Creating events and setting listeners in Javascript
 date: '2020-09-02'
 draft: false
-tags: ['Javascript', 'Web development']
+tags: ['Javascript', 'Web development', 'tips']
 summary: 'How to add an event and how to create a listener to that event'
 ---
 
