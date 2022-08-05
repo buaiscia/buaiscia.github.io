@@ -85,3 +85,5 @@ This way, as we add a listener to the form itself, it will be called collecting 
 Through the callback it will call the method that we need to perform any action we desire.
 
 It's just few lines of code, and we have a custom listener that we can adapt to our needs.
+
+Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!

@@ -45,3 +45,5 @@ This above will say: if the previous ID is different comparing to the next one, 
 In my case, it checks that the IDs are different, and don't do anything. But if they're the same, it'll allow the rerender. It's similar to how ShouldComponentUpdate was working, as we're giving the condition on when to rerender.
 
 So, to sum up, we're memoizing (not rerendering) this component the opposite way only when the IDs (keys) change. That means that when we open a student card it will rerender. But when we add more students, or we use other student cards, they won't rerender in the page, and we will be getting a performance improvement.
+
+Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!

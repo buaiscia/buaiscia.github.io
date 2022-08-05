@@ -30,3 +30,5 @@ formik: FormikContextType<FormikValues>
 values: FormikValues
 errors: FormikErrors<FormikValues>
 ```
+
+Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!

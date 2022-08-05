@@ -79,3 +79,5 @@ If there will be an error, it will be thrown and caught by the catch method. The
 Data will contain, as an object as a matter of fact, the JSON file. We will reassign to data the parsed object and finally we can send it to the next method to use it.
 
 That's it! Now you can mock any kind of response and use it directly in the code to test it!
+
+Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!

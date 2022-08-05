@@ -106,3 +106,5 @@ So from this phase, and making a comparison with my actual project where I have 
 - There are more often than not communication issues during remote working. Take some time to talk to the manager/scrum master if some issue arise, in order to solve it quickly before it adds up or escalate.
 
 Let me know if you had similar experiences or what you learned after you started your journey!
+
+Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!

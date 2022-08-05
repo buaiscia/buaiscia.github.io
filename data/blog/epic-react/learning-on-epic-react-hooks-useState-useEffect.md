@@ -169,3 +169,5 @@ const prevKey = prevKeyRef.current;
 ```
 
 Usually we store in localStorage a value. But this value is in an object, and that object has a key. So for now it's 'count'. But if it will be 'sum', and we don't remove the initial key, we'll have two objects in localStorage. So if the new key and the old one, which is stored in the useRef var, is different, we will remove the object in localStorage with the old key.
+
+Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!

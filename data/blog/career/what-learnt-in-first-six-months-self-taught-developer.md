@@ -111,3 +111,5 @@ Of course, this wouldn't have been possible if I wouldn't have the most understa
     things are working. That's how a dev slowly transition from junior to senior.
   </li>
 </ol>
+
+Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!

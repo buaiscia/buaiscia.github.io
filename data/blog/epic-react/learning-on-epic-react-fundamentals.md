@@ -198,3 +198,5 @@ Not doing so is a mistake that leads to any kind of unpredictable behavior. I di
 ## Conclusion
 
 This is all for the Epic React Fundamentals section. I already know that the next workshops will be more challenging, but it was useful to know/be reminded of some basics.
+
+Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!

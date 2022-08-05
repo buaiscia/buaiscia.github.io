@@ -95,3 +95,5 @@ I actually failed twice on the FE position, but I insisted and got accepted on t
 </ol>
 
 Feel free to drop any questions or comment!
+
+Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!
