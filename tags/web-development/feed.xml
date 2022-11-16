@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Wed, 27 Jul 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 16 Nov 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/tags/web-development/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/tips/make-reusable-get-methods-react-testing-library</guid>
+    <title>Making reusable get methods in React Testing Library</title>
+    <link>https://buaiscia.github.io/blog/tips/make-reusable-get-methods-react-testing-library</link>
+    <description>Creating some abstractions to have ready to use getter functions</description>
+    <pubDate>Wed, 16 Nov 2022 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>react</category><category>react testing library</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/tips/memoize-react-component</guid>
     <title>Memoize a React component</title>

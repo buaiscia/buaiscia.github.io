@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Alex Buaiscia Blog</title>
+      <link>https://buaiscia.github.io/blog</link>
+      <description>A tech blog of development</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Alex Buaiscia)</managingEditor>
+      <webMaster>undefined (Alex Buaiscia)</webMaster>
+      <lastBuildDate>Wed, 16 Nov 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://buaiscia.github.io/tags/react-testing-library/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://buaiscia.github.io/blog/tips/make-reusable-get-methods-react-testing-library</guid>
+    <title>Making reusable get methods in React Testing Library</title>
+    <link>https://buaiscia.github.io/blog/tips/make-reusable-get-methods-react-testing-library</link>
+    <description>Creating some abstractions to have ready to use getter functions</description>
+    <pubDate>Wed, 16 Nov 2022 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>react</category><category>react testing library</category>
+  </item>
+
+    </channel>
+  </rss>
