@@ -65,4 +65,4 @@ enum ButtonNames {
 
 ```
 
-Thank you for reading and let's connect on [Twitter](https://twitter.com/AlexBuaiscia)!
+Thank you for reading! Let's connect on [Twitter](https://twitter.com/AlexBuaiscia) or [Mastodon](@alex_@uiuxdev.social)!
