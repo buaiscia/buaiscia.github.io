@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Wed, 16 Nov 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 22 Nov 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/tags/web-development/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/tips/make-reusable-test-react-testing-library</guid>
+    <title>Make a reusable test with React Testing Library</title>
+    <link>https://buaiscia.github.io/blog/tips/make-reusable-test-react-testing-library</link>
+    <description>Abstract methods to be reused by different tests</description>
+    <pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>react</category><category>react testing library</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/tips/make-reusable-get-methods-react-testing-library</guid>
     <title>Making reusable get methods in React Testing Library</title>
