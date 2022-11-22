@@ -10,7 +10,7 @@ While writing unit and integration tests, I'm trying to find the best way on how
 I'm using React Testing Library so that makes already a good job of using good patterns.
 However, recently I stumbled upon the fact that I'm reusing again and again the same methods to get the elements from the DOM.
 
-The majority of cases are using `screen.getByRole` for the buttons and `screen.getByLabelText` for the inputs, using the name prop. The only difference would be the first returing the element, and the latter returning the value of the input. Normally, I would use the first one this way:
+The majority of cases are using `screen.getByRole` for the buttons and `screen.getByLabelText` for the inputs, using the name prop. The only difference would be the first returning the element, and the latter returning the value of the input. Normally, I would use the first one this way:
 ```js
 screen.getByRole('button', {name: /name of the button/i })
 ```
@@ -61,8 +61,6 @@ enum ButtonNames {
   ButtonOne = "button one"
   ButtonTwo = "button two"
 }
-
-
 ```
 
 Thank you for reading! Let's connect on [Twitter](https://twitter.com/AlexBuaiscia) or [Mastodon](@alex_@uiuxdev.social)!

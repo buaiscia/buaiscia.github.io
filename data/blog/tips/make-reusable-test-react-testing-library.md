@@ -13,7 +13,7 @@ The footer consists only of a box with inside an SVG icon and a text. But those 
 The logic is already in place, and the simple test steps would be: 
 - render the page (component)
 - get the elements to check
-- check that the elements have the correct stlye.
+- check that the elements have the correct style.
 
 The next -and boring- step would be placing this test inside each page test suite, and check for the color individually.
 
