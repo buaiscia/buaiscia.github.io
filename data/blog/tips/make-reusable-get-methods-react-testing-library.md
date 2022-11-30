@@ -2,7 +2,7 @@
 title: Making reusable get methods in React Testing Library
 date: '2022-11-16'
 draft: false
-tags: ['web development', 'react', 'react testing library']
+tags: ['web development', 'react', 'react testing library', 'testing']
 summary: 'Creating some abstractions to have ready to use getter functions'
 ---
 

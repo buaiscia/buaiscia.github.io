@@ -2,7 +2,7 @@
 title: Make a reusable test with React Testing Library
 date: '2022-11-22'
 draft: false
-tags: ['web development', 'react', 'react testing library']
+tags: ['web development', 'react', 'react testing library', 'testing']
 summary: 'Abstract methods to be reused by different tests'
 ---
 
