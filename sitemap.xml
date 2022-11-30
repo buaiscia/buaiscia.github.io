@@ -53,6 +53,10 @@
   </url>
 
   <url>
+    <loc>https://buaiscia.github.io/blog/tips/finding-bug-writing-tests-example</loc>
+  </url>
+
+  <url>
     <loc>https://buaiscia.github.io/blog/tips/make-reusable-get-methods-react-testing-library</loc>
   </url>
 
@@ -114,6 +118,10 @@
 
   <url>
     <loc>https://buaiscia.github.io/tags/react-testing-library</loc>
+  </url>
+
+  <url>
+    <loc>https://buaiscia.github.io/tags/testing</loc>
   </url>
 
   <url>

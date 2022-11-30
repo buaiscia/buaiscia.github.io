@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Tue, 22 Nov 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 30 Nov 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/tips/finding-bug-writing-tests-example</guid>
+    <title>Finding a bug after writing a test, an example</title>
+    <link>https://buaiscia.github.io/blog/tips/finding-bug-writing-tests-example</link>
+    <description>I wrote a test and found a small bug. Even in React writing tests is important</description>
+    <pubDate>Wed, 30 Nov 2022 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>react</category><category>testing</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/tips/make-reusable-test-react-testing-library</guid>
     <title>Make a reusable test with React Testing Library</title>
@@ -17,7 +27,7 @@
     <description>Abstract methods to be reused by different tests</description>
     <pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
-    <category>web development</category><category>react</category><category>react testing library</category>
+    <category>web development</category><category>react</category><category>react testing library</category><category>testing</category>
   </item>
 
   <item>
@@ -27,7 +37,7 @@
     <description>Creating some abstractions to have ready to use getter functions</description>
     <pubDate>Wed, 16 Nov 2022 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
-    <category>web development</category><category>react</category><category>react testing library</category>
+    <category>web development</category><category>react</category><category>react testing library</category><category>testing</category>
   </item>
 
   <item>
