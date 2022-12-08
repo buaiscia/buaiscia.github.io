@@ -69,6 +69,10 @@
   </url>
 
   <url>
+    <loc>https://buaiscia.github.io/blog/tips/reduce-jest-tests-running-time-maxworkers</loc>
+  </url>
+
+  <url>
     <loc>https://buaiscia.github.io/blog/tips/sending-errors-formik-form</loc>
   </url>
 
@@ -106,6 +110,10 @@
 
   <url>
     <loc>https://buaiscia.github.io/tags/javascript</loc>
+  </url>
+
+  <url>
+    <loc>https://buaiscia.github.io/tags/jest</loc>
   </url>
 
   <url>

@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Wed, 30 Nov 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 08 Dec 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/tips/reduce-jest-tests-running-time-maxworkers</guid>
+    <title>Reduce your Jest tests running time (especially on hooks!) with the maxWorkers option&#39;</title>
+    <link>https://buaiscia.github.io/blog/tips/reduce-jest-tests-running-time-maxworkers</link>
+    <description>How tweaking the maxWorkers option can increase tests efficiency</description>
+    <pubDate>Thu, 08 Dec 2022 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>jest</category><category>testing</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/tips/finding-bug-writing-tests-example</guid>
     <title>Finding a bug after writing a test, an example</title>
