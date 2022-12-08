@@ -1,5 +1,5 @@
 ---
-title: Reduce your Jest tests running time (especially on hooks!) with the maxWorkers option'
+title: Reduce your Jest tests running time (especially on hooks!) with the maxWorkers option
 date: '2022-12-08'
 draft: false
 tags: ['web development', 'jest', 'testing']
