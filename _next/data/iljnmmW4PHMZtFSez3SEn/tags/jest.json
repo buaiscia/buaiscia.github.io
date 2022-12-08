@@ -1,1 +1,0 @@
-{"pageProps":{"posts":[{"title":"Reduce your Jest tests running time (especially on hooks!) with the maxWorkers option'","date":"2022-12-08T00:00:00.000Z","draft":false,"tags":["web development","jest","testing"],"summary":"How tweaking the maxWorkers option can increase tests efficiency","slug":"tips/reduce-jest-tests-running-time-maxworkers"}],"tag":"jest"},"__N_SSG":true}
