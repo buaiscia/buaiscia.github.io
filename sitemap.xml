@@ -69,6 +69,10 @@
   </url>
 
   <url>
+    <loc>https://buaiscia.github.io/blog/tips/passing-props-emotion-styles-material-ui</loc>
+  </url>
+
+  <url>
     <loc>https://buaiscia.github.io/blog/tips/reduce-jest-tests-running-time-maxworkers</loc>
   </url>
 
@@ -114,6 +118,10 @@
 
   <url>
     <loc>https://buaiscia.github.io/tags/jest</loc>
+  </url>
+
+  <url>
+    <loc>https://buaiscia.github.io/tags/material-ui</loc>
   </url>
 
   <url>

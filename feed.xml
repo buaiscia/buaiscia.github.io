@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Thu, 08 Dec 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 31 Jan 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/tips/passing-props-emotion-styles-material-ui</guid>
+    <title>Fixing Material UI and Emotion&#39;s handling of Transient Options</title>
+    <link>https://buaiscia.github.io/blog/tips/passing-props-emotion-styles-material-ui</link>
+    <description>Passing Props to custom Emotion styles with Material UI</description>
+    <pubDate>Tue, 31 Jan 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>react</category><category>material ui</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/tips/reduce-jest-tests-running-time-maxworkers</guid>
     <title>Reduce your Jest tests running time (especially on hooks!) with the maxWorkers option</title>

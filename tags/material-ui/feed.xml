@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Alex Buaiscia Blog</title>
+      <link>https://buaiscia.github.io/blog</link>
+      <description>A tech blog of development</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Alex Buaiscia)</managingEditor>
+      <webMaster>undefined (Alex Buaiscia)</webMaster>
+      <lastBuildDate>Tue, 31 Jan 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://buaiscia.github.io/tags/material-ui/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://buaiscia.github.io/blog/tips/passing-props-emotion-styles-material-ui</guid>
+    <title>Fixing Material UI and Emotion&#39;s handling of Transient Options</title>
+    <link>https://buaiscia.github.io/blog/tips/passing-props-emotion-styles-material-ui</link>
+    <description>Passing Props to custom Emotion styles with Material UI</description>
+    <pubDate>Tue, 31 Jan 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>react</category><category>material ui</category>
+  </item>
+
+    </channel>
+  </rss>
