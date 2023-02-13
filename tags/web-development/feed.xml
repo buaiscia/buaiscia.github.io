@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Tue, 31 Jan 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 13 Feb 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/tags/web-development/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/tips/removing-react-imports</guid>
+    <title>Removing Default React Imports in React. A Guide to Cleaner Code</title>
+    <link>https://buaiscia.github.io/blog/tips/removing-react-imports</link>
+    <description>Simplifying Your Codebase with the New JSX Transform and Eslint Configuration</description>
+    <pubDate>Mon, 13 Feb 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>Web development</category><category>React</category><category>tips</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/tips/passing-props-emotion-styles-material-ui</guid>
     <title>Fixing Material UI and Emotion&#39;s handling of Transient Options</title>
@@ -17,7 +27,7 @@
     <description>Passing Props to custom Emotion styles with Material UI</description>
     <pubDate>Tue, 31 Jan 2023 00:00:00 GMT</pubDate>
     <author>undefined (Alex Buaiscia)</author>
-    <category>web development</category><category>react</category><category>material ui</category>
+    <category>Web development</category><category>React</category><category>Material UI</category><category>tips</category>
   </item>
 
   <item>
