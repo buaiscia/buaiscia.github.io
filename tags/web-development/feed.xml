@@ -12,7 +12,7 @@
       
   <item>
     <guid>https://buaiscia.github.io/blog/tips/removing-react-imports</guid>
-    <title>Removing Default React Imports in React. A Guide to Cleaner Code</title>
+    <title>Removing Default React Imports. For a Cleaner Code</title>
     <link>https://buaiscia.github.io/blog/tips/removing-react-imports</link>
     <description>Simplifying Your Codebase with the New JSX Transform and Eslint Configuration</description>
     <pubDate>Mon, 13 Feb 2023 00:00:00 GMT</pubDate>
