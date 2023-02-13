@@ -1,5 +1,5 @@
 ---
-title: Removing Default React Imports in React. A Guide to Cleaner Code
+title: Removing Default React Imports. For a Cleaner Code
 date: '2023-02-13'
 draft: false
 tags: ['Web development', 'React', 'tips']
@@ -12,7 +12,7 @@ To be precise, it was present also in some previous React versions, but it was a
 We were accustomed to the need of importing React in every. single. file.
 And maybe you are still doing it after the migration. I did it, indeed, for a while :D
 
-That is because this possibility is in the docs, but in a side note with an enigmatic title: ["Introducing the new JSX transform"](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#removing-unused-react-imports).
+That is because this possibility is in the docs, but on a side note with an enigmatic title: ["Introducing the new JSX transform"](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#removing-unused-react-imports).
 
 In substance, it creates React as a global so it does not need to import it everywhere. How does it work? 
 It is quite simple. Instead of having:
