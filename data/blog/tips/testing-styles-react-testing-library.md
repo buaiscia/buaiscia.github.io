@@ -10,7 +10,7 @@ Sometimes -or often, depending on the case- we need to test some particular styl
 The way this is implemented depends on the library we use for the styling.
 
 Supposing that we have some text, inside a component, that depending on the prop it's white or black.
-In the DOM, it will reflect this way. However, especially as it's not a fixed element, it's better that we test how it behaves on different pages.
+In the DOM, it will reflect this way. However, especially as it's not a fixed element, we should test how it behaves on different pages.
 
 The test itself using React Testing Library is very simple because it checks directly the DOM:
 ```js
