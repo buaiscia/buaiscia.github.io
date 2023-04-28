@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Alex Buaiscia Blog</title>
+      <link>https://buaiscia.github.io/blog</link>
+      <description>A tech blog of development</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Alex Buaiscia)</managingEditor>
+      <webMaster>undefined (Alex Buaiscia)</webMaster>
+      <lastBuildDate>Fri, 28 Apr 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://buaiscia.github.io/tags/database/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://buaiscia.github.io/blog/holistic-history/the-holistic-history-project</guid>
+    <title>The Holistic History Project</title>
+    <link>https://buaiscia.github.io/blog/holistic-history/the-holistic-history-project</link>
+    <description>Creating a new polymathic web project about history</description>
+    <pubDate>Fri, 28 Apr 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>Database</category><category>Web development</category><category>Holistic History</category>
+  </item>
+
+    </channel>
+  </rss>
