@@ -23,6 +23,6 @@ The project will be about a holistic view of historical events, and how they rel
 
 I'll be using some tech to experiment with, starting with Remix, with Prisma as ORM, and SQLlite as DB. I will share the progress here and on my Substack notes / Instagram / Twitter. Here's the first scratch of DB.
 
-![DB diagram](../../../public/static/images/DB_diagram.png)
+![DB diagram](/static/images/DB_diagram.png)
 
 If you'd like to subscribe to my new polymathic newsletter, [here's the link!](https://polymathicwebdeveloperdigest.substack.com/)
