@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
-      <lastBuildDate>Fri, 28 Apr 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 29 May 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://buaiscia.github.io/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://buaiscia.github.io/blog/tips/types-issue-jest-vitest</guid>
+    <title>Types Compatibility issues between Jest and Vitest using React Testing Library and their fix</title>
+    <link>https://buaiscia.github.io/blog/tips/types-issue-jest-vitest</link>
+    <description>Addressing Jest-Vitest Conflict: Fixing Global Type Identifier Errors and Optimizing Build Workflow</description>
+    <pubDate>Mon, 29 May 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Alex Buaiscia)</author>
+    <category>web development</category><category>jest</category><category>react-testing-library</category>
+  </item>
+
   <item>
     <guid>https://buaiscia.github.io/blog/holistic-history/the-holistic-history-project</guid>
     <title>The Holistic History Project</title>
