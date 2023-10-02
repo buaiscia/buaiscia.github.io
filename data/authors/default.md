@@ -11,7 +11,7 @@ github: https://github.com/buaiscia
 <div>
   <p>Born in Italy, moved to Colombia, Bogota' and then to Czech Republic, Brno, I've passed from IT in high school to humanistic studies and languages in the years afterwards, getting from teaching to being academic director in a language school.</p>
   <p>Back in Europe my love for IT rised again, and during my years as application support engineer I learnt development by myself, working on personal and professional projects (automation webtools).</p>
-  <p>At the moment I'm employed as fullstack software engineer at [Moravio](https://www.moravio.com/) where I develop using a Javascript/Typescript tech stack.</p>
+  <p>At the moment I'm employed as fullstack software engineer at [Atlas Copco](https://www.atlascopco.com/) where I develop using a Javascript/Typescript tech stack.</p>
   <p>In the little personal free time I try to help other want-to-be developers and write about what I learn.</p>
   <h4>On the web</h4>
   <p>🛠 <a href="https://github.com/buaiscia" target="__blank" style={{ marginLeft: '10px' }}>My Github repositories </a></p>
