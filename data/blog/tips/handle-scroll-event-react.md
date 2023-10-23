@@ -1,7 +1,7 @@
 ---
 title: How to Handle Scroll Events in React
 date: '2023-10-22'
-draft: true
+draft: false
 tags: ['web development', 'react']
 summary: 'Mastering Smooth Scroll Events in React: A Guide to Debouncing and Dynamic Navigation'
 ---
