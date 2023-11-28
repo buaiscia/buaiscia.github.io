@@ -25,16 +25,6 @@
   </url>
 
   <url>
-    <loc>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-fundamentals</loc>
-  </url>
-
-  <url>
-    <loc
-      >https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-hooks-useState-useEffect</loc
-    >
-  </url>
-
-  <url>
     <loc
       >https://buaiscia.github.io/blog/career/how-passed-from-junior-to-intermediate-dev-one-year</loc
     >
@@ -49,6 +39,16 @@
   <url>
     <loc
       >https://buaiscia.github.io/blog/career/what-learnt-in-first-six-months-self-taught-developer</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-fundamentals</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://buaiscia.github.io/blog/epic-react/learning-on-epic-react-hooks-useState-useEffect</loc
     >
   </url>
 
@@ -82,6 +82,10 @@
 
   <url>
     <loc>https://buaiscia.github.io/blog/tips/passing-props-emotion-styles-material-ui</loc>
+  </url>
+
+  <url>
+    <loc>https://buaiscia.github.io/blog/tips/printing-developer-journey-react-to-print</loc>
   </url>
 
   <url>
