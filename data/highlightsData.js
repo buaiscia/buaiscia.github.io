@@ -1,5 +1,20 @@
 const highlightsData = [
   {
+    date: 'Sep 15, 2023',
+    cardTitle: 'Atlas Copco',
+    url: 'https://www.linkedin.com/posts/alex-buaiscia_im-happy-to-share-that-im-starting-a-new-activity-7108499579318194176-S-zH',
+    media: {
+      name: 'atlas copco image',
+      source: {
+        url: 'https://getvectorlogo.com/wp-content/uploads/2018/11/atlas-copco-vector-logo.png',
+      },
+      type: 'IMAGE',
+    },
+    cardSubtitle: 'Starting a new position in Atlas Copco as Frontend Developer',
+    cardDetailedText:
+      'I am happy to share that I am starting a new activity as Frontend Developer in Atlas Copco. I will be working on the development of the new e-commerce platform for the company.',
+  },
+  {
     date: 'Jun 16, 2023',
     cardTitle: 'Remix',
     url: 'https://docs.google.com/presentation/d/1F3RQpIEzVz7S0EgPd2m8JzQ7LPE5jZG0/edit?usp=sharing&ouid=100556322225803667765&rtpof=true&sd=true',
