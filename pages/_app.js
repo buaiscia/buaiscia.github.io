@@ -1,8 +1,10 @@
 import '@/css/tailwind.css'
 import '@/css/prism.css'
 import 'katex/dist/katex.css'
+import 'react-chrono/dist/style.css'
 
-import '@fontsource/inter/variable-full.css'
+import '@fontsource/inter/400.css'
+import '@fontsource/inter/700.css'
 
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'

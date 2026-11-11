@@ -2,8 +2,10 @@ import siteMetadata from '@/data/siteMetadata'
 // import projectsData from '@/data/highlightsData'
 // import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
-import { Chrono } from 'react-chrono'
+import dynamic from 'next/dynamic'
 import highlightsData from '@/data/highlightsData'
+
+const Chrono = dynamic(() => import('react-chrono').then((module) => module.Chrono), { ssr: false })
 
 export default function Highlights() {
   return (
@@ -27,7 +29,8 @@ export default function Highlights() {
               items={highlightsData}
               mode="VERTICAL_ALTERNATING"
               itemWidth={500}
-              hideControls={true}
+              display={{ toolbar: { enabled: false } }}
+              theme={{ titleColor: '#ffffff' }}
             />
           </div>
         </div>
