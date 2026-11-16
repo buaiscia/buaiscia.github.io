@@ -16,7 +16,7 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="border-b border-gray-200 pt-10 pb-14 dark:border-gray-700 sm:pt-16 sm:pb-20">
+      <div className="border-b border-gray-200 pt-6 pb-14 dark:border-gray-700 sm:pt-12 sm:pb-20">
         <p className="text-base text-gray-500 dark:text-gray-400">
           Software engineer, curious across disciplines
         </p>
