@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" role="img" aria-labelledby="title">
+  <title id="title">PolyAgora</title>
+  <rect width="360" height="320" fill="#ffffff" />
+  <circle cx="105" cy="160" r="28" fill="#f2f3f5" />
+  <path d="M12 2 2 7l10 5 10-5L12 2Zm0 9 2.5-1.25L12 8.5 9.5 9.75 12 11Zm0 2.5-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5Z" fill="#1e293b" transform="translate(85 139) scale(1.7)" />
+  <text x="147" y="169" fill="#1e293b" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="-0.8">PolyAgora</text>
+</svg>

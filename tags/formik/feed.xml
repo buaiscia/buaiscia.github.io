@@ -1,9 +1,9 @@
 
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-      <title>Alex Buaiscia Blog</title>
+      <title>Alex Buaiscia</title>
       <link>https://buaiscia.github.io/blog</link>
-      <description>A tech blog of development</description>
+      <description>Software engineering, interdisciplinary projects, and writing about technology, knowledge, and learning.</description>
       <language>en-us</language>
       <managingEditor>undefined (Alex Buaiscia)</managingEditor>
       <webMaster>undefined (Alex Buaiscia)</webMaster>
