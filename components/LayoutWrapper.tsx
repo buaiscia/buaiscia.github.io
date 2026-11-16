@@ -12,7 +12,11 @@ const LayoutWrapper = ({ children }) => {
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
         <header className="flex items-center justify-between gap-2 py-5 sm:py-8">
-          <Link href="/" aria-label={siteMetadata.headerTitle} className="flex min-w-0 items-center gap-2 sm:gap-3">
+          <Link
+            href="/"
+            aria-label={siteMetadata.headerTitle}
+            className="flex min-w-0 items-center gap-2 sm:gap-3"
+          >
             <Logo className="h-12 w-12 shrink-0 sm:h-16 sm:w-16" />
             <span className="whitespace-nowrap text-base font-semibold leading-tight text-gray-900 dark:text-gray-100 sm:text-xl md:text-2xl">
               {siteMetadata.headerTitle}

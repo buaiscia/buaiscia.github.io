@@ -55,8 +55,8 @@ export default function PolyAgora({ relatedPosts }) {
         <h2>Current stage</h2>
         <p>
           PolyAgora is deployed and open for public browsing. The platform already supports
-          publishing, discussion, discovery, and member portfolios, with ongoing work to improve
-          the experience as the community grows.
+          publishing, discussion, discovery, and member portfolios, with ongoing work to improve the
+          experience as the community grows.
         </p>
       </section>
       <section>

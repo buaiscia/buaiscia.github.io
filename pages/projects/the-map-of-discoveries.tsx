@@ -18,9 +18,9 @@ export default function TheMapOfDiscoveries({ relatedPosts }) {
         <p>
           The Map of Discoveries is an Italian-language learning app for a child who enjoys a
           challenge. It offers two paths, mathematics and geometry, with 20 missions in each. Every
-          mission gives a problem a short story and invites the child to work out a numerical answer.
-          These first paths establish a format that can grow to include history, English, and other
-          subjects.
+          mission gives a problem a short story and invites the child to work out a numerical
+          answer. These first paths establish a format that can grow to include history, English,
+          and other subjects.
         </p>
       </section>
       <section>
