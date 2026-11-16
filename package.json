@@ -3,13 +3,13 @@
   "version": "1.5.6",
   "private": true,
   "scripts": {
-    "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
+    "start": "cross-env SOCKET=true tsx ./scripts/next-remote-watch.ts ./data",
     "dev": "next dev",
-    "build": "next build && node ./scripts/generate-sitemap",
+    "build": "next build && tsx ./scripts/generate-sitemap.ts",
     "serve": "next start",
     "analyze": "next analyze",
-    "lint": "eslint pages components lib layouts scripts",
-    "prepare": "husky"
+    "lint": "eslint pages components lib layouts data scripts *.config.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@fontsource/inter": "^5.3.0",
@@ -44,6 +44,9 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "chalk": "^4.1.2",
     "chokidar": "^3.6.0",
     "commander": "^9.5.0",
@@ -56,20 +59,13 @@
     "express": "^4.22.3",
     "file-loader": "^6.0.0",
     "globby": "^16.2.4",
-    "husky": "^9.1.7",
     "inquirer": "^14.2.5",
-    "lint-staged": "^17.6.0",
+    "jiti": "^2.7.0",
     "prettier": "^3.10.0",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "socket.io": "^4.8.4",
-    "socket.io-client": "^4.8.4"
-  },
-  "lint-staged": {
-    "*.+(js|jsx|ts|tsx)": [
-      "eslint --fix"
-    ],
-    "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
-      "prettier --write"
-    ]
+    "socket.io-client": "^4.8.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
   }
 }
