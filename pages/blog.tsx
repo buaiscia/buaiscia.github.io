@@ -21,7 +21,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
     <>
       <PageSEO
         title={`Writing - ${siteMetadata.author}`}
-        description="Articles about software engineering, projects, and connections between technology and learning."
+        description="Writing about learning, education, interdisciplinary projects, and the tools that support them."
       />
       <ListLayout
         posts={posts}

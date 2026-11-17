@@ -1,4 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -22,11 +21,36 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Nunito', 'Arial', 'sans-serif'],
+        serif: ['DM Serif Display', 'Georgia', 'serif'],
       },
       colors: {
-        primary: colors.blue,
-        gray: colors.neutral,
+        primary: {
+          50: '#f3f6ee',
+          100: '#e4ebd8',
+          200: '#cdddbc',
+          300: '#a9c79c',
+          400: '#84a977',
+          500: '#638863',
+          600: '#476c4d',
+          700: '#385941',
+          800: '#2d4837',
+          900: '#273d31',
+          950: '#1d2d24',
+        },
+        gray: {
+          50: '#faf9f4',
+          100: '#f0eee5',
+          200: '#deded0',
+          300: '#c7c7b7',
+          400: '#969d8d',
+          500: '#6c786c',
+          600: '#586957',
+          700: '#48594b',
+          800: '#34483b',
+          900: '#273d31',
+          950: '#1d2d24',
+        },
       },
       typography: (theme) => ({
         DEFAULT: {

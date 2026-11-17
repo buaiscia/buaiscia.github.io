@@ -38,7 +38,7 @@ const siteMetadata: SiteMetadata = {
   author: 'Alex Buaiscia',
   headerTitle: 'Alex Buaiscia',
   description:
-    'Software engineering, interdisciplinary projects, and writing about technology, knowledge, and learning.',
+    'Exploring how people learn through educational design, storytelling, and thoughtful technology.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://buaiscia.github.io',

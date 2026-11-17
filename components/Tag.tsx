@@ -5,9 +5,9 @@ const Tag = ({ text }) => {
   return (
     <Link
       href={`/tags/${kebabCase(text)}`}
-      className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+      className="inline-flex rounded-full bg-primary-100 px-3 py-1 text-xs font-bold text-primary-700 transition-colors hover:bg-primary-200 dark:bg-primary-800 dark:text-primary-100 dark:hover:bg-primary-700"
     >
-      {text.split(' ').join('-')}
+      {text}
     </Link>
   )
 }

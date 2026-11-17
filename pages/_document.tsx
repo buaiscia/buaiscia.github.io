@@ -4,6 +4,12 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="scroll-smooth">
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+          />
           <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MMN95BF" />
           <script
             dangerouslySetInnerHTML={{
@@ -26,13 +32,13 @@ gtag('js', new Date());`,
             href="/static/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
-          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-          <meta name="msapplication-TileColor" content="#000000" />
-          <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
-          <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
+          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#476c4d" />
+          <meta name="msapplication-TileColor" content="#273d31" />
+          <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8f6eb" />
+          <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1d2d24" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
-        <body className="bg-white font-sans text-black antialiased dark:bg-gray-900 dark:text-white">
+        <body className="bg-[#f8f6eb] font-sans text-primary-900 antialiased dark:bg-[#1d2d24] dark:text-gray-100">
           <Main />
           <NextScript />
         </body>

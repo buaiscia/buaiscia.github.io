@@ -10,7 +10,7 @@ export default function ProjectPage({ project, children, relatedPosts }) {
         title={`${project.title} - ${siteMetadata.author}`}
         description={project.description}
       />
-      <div className="border-b border-gray-200 pt-6 pb-10 dark:border-gray-700">
+      <div className="border-b border-gray-200 pt-6 pb-4 dark:border-gray-700">
         <Link
           href="/projects"
           className="text-sm font-medium text-primary-500 hover:text-primary-600"
@@ -20,9 +20,7 @@ export default function ProjectPage({ project, children, relatedPosts }) {
         <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-400">
           {project.status}
         </p>
-        <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:text-5xl">
-          {project.title}
-        </h1>
+        <h1 className="garden-heading mt-3 text-4xl sm:text-5xl md:text-6xl">{project.title}</h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-gray-600 dark:text-gray-300">
           {project.description}
         </p>
@@ -30,12 +28,12 @@ export default function ProjectPage({ project, children, relatedPosts }) {
           {project.disciplines.join(' · ')}
         </p>
       </div>
-      <div className="prose max-w-3xl py-10 dark:prose-dark">{children}</div>
+      <div className="project-prose prose max-w-3xl pt-4 pb-10 dark:prose-dark">{children}</div>
       <section
         className="border-t border-gray-200 py-10 dark:border-gray-700"
         aria-labelledby="related-writing"
       >
-        <h2 id="related-writing" className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 id="related-writing" className="garden-heading text-3xl">
           Related writing
         </h2>
         {relatedPosts.length ? (

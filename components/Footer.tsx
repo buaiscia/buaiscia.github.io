@@ -4,28 +4,26 @@ import SocialIcon from '@/components/social-icons'
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="mt-16 flex flex-col items-center">
-        <div className="mb-3 flex space-x-4">
-          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="6" />
-          <SocialIcon kind="github" href={siteMetadata.github} size="6" />
-          <SocialIcon kind="facebook" href={siteMetadata.facebook} size="6" />
-          <SocialIcon kind="youtube" href={siteMetadata.youtube} size="6" />
-          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
-          <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
+    <footer className="mt-12 border-t border-gray-200 py-9 dark:border-gray-700">
+      <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+        <div>
+          <p className="font-serif text-2xl text-primary-900 dark:text-gray-100">
+            Keep learning, keep wondering.
+          </p>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+            © {new Date().getFullYear()} {siteMetadata.author}
+          </p>
         </div>
-        <div className="mb-6 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>{siteMetadata.author}</div>
-          <div>{` • `}</div>
-          <div>{`© ${new Date().getFullYear()}`}</div>
-          <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
-        </div>
-        {/* <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
-            Tailwind Nextjs Theme
+        <div className="flex flex-col gap-4 sm:items-end">
+          <div className="flex items-center gap-4">
+            <SocialIcon kind="github" href={siteMetadata.github} size="5" />
+            <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" />
+            <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" />
+          </div>
+          <Link href="/about" className="garden-link text-sm">
+            Get to know me <span aria-hidden="true">→</span>
           </Link>
-        </div> */}
+        </div>
       </div>
     </footer>
   )

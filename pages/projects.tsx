@@ -7,18 +7,18 @@ export default function Projects() {
   return (
     <>
       <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Projects
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Experiments in connecting ideas and making complex subjects easier to explore.
+      <div>
+        <div className="border-b border-gray-200 pt-12 pb-10 dark:border-gray-700 sm:pt-16">
+          <p className="garden-eyebrow mb-4">Ideas made tangible</p>
+          <h1 className="garden-heading text-5xl sm:text-6xl">Educational projects</h1>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-gray-700 dark:text-gray-200">
+            Stories, games, and spaces for exploring ideas together. Each project starts with a
+            question about how people learn.
           </p>
         </div>
-        <div className="-m-4 flex flex-wrap py-12">
+        <div className="grid gap-5 py-12 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((project) => (
-            <Card key={project.slug} {...project} />
+            <Card key={project.slug} headingLevel={2} {...project} />
           ))}
         </div>
       </div>

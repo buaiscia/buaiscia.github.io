@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Buaiscia — education-focused homepage directions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: #242820; background: #e9e9e3; font-family: 'DM Sans', Arial, sans-serif; }
+    button { font: inherit; }
+    .review { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; padding: 13px max(24px, calc((100vw - 1380px)/2)); color: #f8f8f4; background: #232923; box-shadow: 0 4px 25px #151b1722; }
+    .review-title { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tab { border: 1px solid #ffffff33; background: transparent; color: #e6e9e3; padding: 9px 15px; border-radius: 100px; font-size: 13px; cursor: pointer; }
+    .tab:hover, .tab:focus-visible { background: #ffffff1c; }
+    .tab[aria-selected="true"] { background: #f4f2e8; color: #263226; border-color: #f4f2e8; }
+    .concept { display: none; }
+    .concept.active { display: block; }
+    .mockup { min-height: 850px; max-width: 1500px; margin: 28px auto 0; overflow: hidden; box-shadow: 0 18px 70px #1d2a2226; }
+    .meta { max-width: 1440px; margin: 0 auto 50px; padding: 22px 6px 0; display: flex; gap: 20px; align-items: center; justify-content: space-between; flex-wrap: wrap; color: #3d4640; }
+    .meta p { margin: 0; line-height: 1.5; font-size: 14px; }
+    .swatches { display: flex; gap: 7px; }
+    .swatches i { width: 21px; height: 21px; border-radius: 50%; border: 1px solid #00000012; }
+    .site-nav { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .nav-items { display: flex; align-items: center; gap: clamp(16px, 2.6vw, 38px); font-size: 15px; font-weight: 600; }
+    .nav-items span { white-space: nowrap; }
+    .brand { display: flex; align-items: center; gap: 10px; font-size: 21px; font-weight: 700; white-space: nowrap; }
+    .brandmark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; font-family: Georgia, serif; font-size: 31px; line-height: 1; font-weight: normal; }
+    .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    .pill { display: inline-flex; align-items: center; gap: 7px; border-radius: 100px; padding: 13px 20px; text-decoration: none; font-size: 14px; font-weight: 700; white-space: nowrap; }
+    .text-link { font-size: 14px; font-weight: 700; white-space: nowrap; }
+    .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 23px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; }
+    .section-head h2 { margin: 0; font-weight: 400; }
+
+    /* 1 — Learning garden: calm, human, optimistic. */
+    .garden { background: #f8f6eb; color: #273d31; font-family: 'Nunito', Arial, sans-serif; }
+    .garden .inner { max-width: 1260px; margin: 0 auto; padding: 0 44px; }
+    .garden .site-nav { padding-top: 27px; }
+    .garden .brandmark { background: #dce8ca; color: #426d4a; transform: rotate(-18deg); }
+    .garden .nav-items { color: #485b4c; }
+    .garden .nav-items span:last-child { background: #e4ebd8; border-radius: 100px; padding: 10px 17px; }
+    .garden .hero { position: relative; display: grid; grid-template-columns: 1.04fr .96fr; align-items: center; min-height: 545px; gap: 30px; padding: 72px 0 40px; }
+    .garden .hero-copy { position: relative; z-index: 1; max-width: 620px; }
+    .garden .eyebrow { color: #6d8c5c; }
+    .garden h1 { max-width: 670px; margin: 20px 0 21px; font-family: 'DM Serif Display', Georgia, serif; font-size: clamp(57px, 5.4vw, 83px); line-height: 1.02; letter-spacing: -.035em; font-weight: 400; }
+    .garden h1 em { color: #7d9d6f; font-weight: 400; }
+    .garden .lede { max-width: 515px; font-size: 19px; line-height: 1.68; color: #4f6253; margin: 0 0 30px; }
+    .garden .pill { background: #476c4d; color: white; }
+    .garden .text-link { color: #476c4d; }
+    .garden .art { position: relative; min-height: 490px; }
+    .garden .shape-main { position: absolute; inset: 25px 0 15px 38px; background: #dce8c9; border-radius: 43% 57% 62% 38% / 44% 38% 62% 56%; transform: rotate(-9deg); }
+    .garden .shape-peach { position: absolute; width: 142px; height: 142px; right: 13px; top: 0; background: #efc2a7; border-radius: 47% 53% 64% 36%; }
+    .garden .orb { position: absolute; width: 305px; height: 305px; left: 21%; top: 80px; border-radius: 50%; background: #f6e2ab; box-shadow: inset -22px -13px 0 #e9ca8a; }
+    .garden .book { position: absolute; width: 330px; height: 220px; left: 15%; top: 171px; transform: rotate(-12deg); filter: drop-shadow(5px 12px 12px #4b5b3933); }
+    .garden .book:before, .garden .book:after { content: ''; position: absolute; top: 0; width: 50%; height: 100%; background: #fffdf1; border: 2px solid #739272; }
+    .garden .book:before { left: 0; border-radius: 8px 35px 9px 25px; transform: skewY(5deg); }
+    .garden .book:after { right: 0; border-radius: 35px 8px 25px 9px; transform: skewY(-5deg); }
+    .garden .book-center { position: absolute; z-index: 2; top: 0; bottom: 0; left: 50%; border-left: 2px solid #739272; }
+    .garden .book-line { position: absolute; z-index: 3; height: 2px; background: #c1d0b6; border-radius: 4px; }
+    .garden .l1 { top: 65px; left: 25px; width: 95px; } .garden .l2 { top: 88px; left: 25px; width: 108px; } .garden .l3 { top: 111px; left: 25px; width: 76px; }
+    .garden .l4 { top: 70px; right: 25px; width: 90px; } .garden .l5 { top: 93px; right: 25px; width: 110px; } .garden .l6 { top: 116px; right: 25px; width: 69px; }
+    .garden .stem { position: absolute; width: 4px; height: 170px; background: #638564; border-radius: 50%; transform-origin: bottom; }
+    .garden .stem.one { left: 15%; top: 68px; transform: rotate(-33deg); } .garden .stem.two { right: 20%; bottom: 62px; transform: rotate(29deg); }
+    .garden .leaf { position: absolute; width: 50px; height: 27px; background: #79a074; border-radius: 100% 0 100% 0; transform: rotate(20deg); }
+    .garden .leaf.a { left: 10%; top: 83px; } .garden .leaf.b { left: 17%; top: 145px; transform: rotate(100deg); }
+    .garden .leaf.c { right: 13%; bottom: 170px; transform: rotate(84deg); } .garden .leaf.d { right: 26%; bottom: 125px; }
+    .garden .spark { position: absolute; font-size: 42px; color: #a17757; }
+    .garden .spark.one { right: 14%; top: 124px; } .garden .spark.two { left: 17%; bottom: 17px; font-size: 27px; }
+    .garden .lower { border-top: 1px solid #dbe2d1; padding: 34px 0 55px; }
+    .garden .section-head h2 { font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; }
+    .garden .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; margin-top: 21px; }
+    .garden .card { min-height: 166px; padding: 24px 25px; border-radius: 27px; background: #e9eddf; }
+    .garden .card:nth-child(2) { background: #f5e7d8; } .garden .card:nth-child(3) { background: #eee9db; }
+    .garden .card small { color: #647765; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .garden .card h3 { margin: 13px 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-size: 25px; font-weight: 400; }
+    .garden .card p { margin: 0; line-height: 1.5; font-size: 14px; color: #586957; }
+
+    /* 2 — Field notes: educator as writer, inquiry as method. */
+    .notes { background: #fcf7ee; color: #433a31; }
+    .notes .inner { max-width: 1240px; margin: 0 auto; padding: 0 47px; }
+    .notes .site-nav { padding-top: 29px; padding-bottom: 27px; border-bottom: 1px solid #dccdbd; }
+    .notes .brand { font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; letter-spacing: -.02em; }
+    .notes .brandmark { background: #bb725b; color: #fff9ef; font-size: 28px; }
+    .notes .nav-items { color: #6f5a4a; }
+    .notes .hero { display: grid; grid-template-columns: .97fr 1.03fr; align-items: center; min-height: 525px; gap: 60px; padding: 53px 0; }
+    .notes .eyebrow { color: #a45b44; }
+    .notes h1 { max-width: 620px; margin: 18px 0 18px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(58px, 5.6vw, 86px); letter-spacing: -.035em; line-height: 1.03; }
+    .notes h1 em { color: #b77659; }
+    .notes .lede { max-width: 540px; margin: 0 0 30px; color: #695c4d; line-height: 1.65; font-size: 18px; }
+    .notes .pill { color: #fff9ee; background: #a75f47; }
+    .notes .text-link { color: #9b5a46; }
+    .notes .art { position: relative; min-height: 443px; }
+    .notes .backdrop { position: absolute; width: 88%; height: 95%; right: 0; top: 0; background: #ead7c1; border-radius: 43% 57% 42% 58% / 52% 43% 57% 48%; transform: rotate(8deg); }
+    .notes .page { position: absolute; top: 40px; left: 11%; width: 67%; min-height: 370px; padding: 34px 38px; background: #fffdf7; border-radius: 8px 33px 12px 12px; transform: rotate(-7deg); box-shadow: 8px 17px 30px #573d2b28; }
+    .notes .page:after { content: ''; position: absolute; top: 0; bottom: 0; left: 66px; border-left: 1px solid #f2d8cf; }
+    .notes .page small { position: relative; z-index: 1; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #b46b54; }
+    .notes .page h3 { position: relative; z-index: 1; margin: 25px 0 15px; padding-left: 45px; font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1.14; font-weight: 400; }
+    .notes .page p { position: relative; z-index: 1; padding-left: 45px; line-height: 1.8; font-size: 15px; color: #706253; }
+    .notes .page .scribble { position: relative; z-index: 1; margin-left: 46px; width: 116px; height: 14px; border-bottom: 3px solid #be8065; border-radius: 50%; transform: rotate(-5deg); }
+    .notes .round-label { position: absolute; right: 6px; bottom: 28px; width: 139px; height: 139px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 50%; background: #9aada1; color: #fffdf7; font-family: 'DM Serif Display', Georgia, serif; font-size: 19px; line-height: 1.15; transform: rotate(10deg); box-shadow: 0 9px 16px #573d2b22; }
+    .notes .star { position: absolute; left: 2%; bottom: 12px; color: #b37d5c; font-size: 82px; line-height: 1; }
+    .notes .lower { padding: 33px 0 57px; border-top: 1px solid #dccdbd; }
+    .notes .section-head h2 { font-family: 'DM Serif Display', Georgia, serif; font-size: 35px; }
+    .notes .stories { margin-top: 25px; display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 17px; }
+    .notes .story { padding: 22px 24px; min-height: 165px; border-radius: 8px 25px 8px 25px; background: #f2e6d7; }
+    .notes .story:nth-child(2) { background: #e9e8dc; } .notes .story:nth-child(3) { background: #f2e4df; }
+    .notes .story small { font-weight: 700; font-size: 11px; color: #a26952; text-transform: uppercase; letter-spacing: .1em; }
+    .notes .story h3 { font-family: 'DM Serif Display', Georgia, serif; font-size: 24px; font-weight: 400; margin: 12px 0 9px; }
+    .notes .story p { font-size: 14px; color: #756657; line-height: 1.5; margin: 0; }
+
+    /* 3 — Discovery map: a lively learning product with a human voice. */
+    .map { background: #f7f4fb; color: #302b54; font-family: 'Nunito', Arial, sans-serif; }
+    .map .inner { max-width: 1280px; margin: 0 auto; padding: 0 45px; }
+    .map .site-nav { padding-top: 28px; }
+    .map .brandmark { background: #d9d0f6; color: #5e4ca0; }
+    .map .nav-items { color: #534c70; }
+    .map .nav-items span:last-child { border-radius: 100px; background: #e8e1fa; padding: 10px 18px; color: #554689; }
+    .map .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; min-height: 545px; gap: 23px; padding: 70px 0 50px; }
+    .map .eyebrow { color: #6753a9; }
+    .map h1 { max-width: 625px; margin: 19px 0 22px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(58px, 5.6vw, 85px); letter-spacing: -.035em; line-height: 1.03; }
+    .map h1 em { color: #8067c0; }
+    .map .lede { max-width: 525px; margin: 0 0 30px; color: #625d75; font-size: 18px; line-height: 1.65; }
+    .map .pill { background: #63519e; color: white; }
+    .map .text-link { color: #6553a5; }
+    .map .art { position: relative; min-height: 470px; }
+    .map .planet { position: absolute; left: 15%; top: 42px; width: 355px; height: 355px; border-radius: 50%; background: #ddd3f5; box-shadow: inset -42px -18px 0 #cfc2ee; }
+    .map .planet:before { content: ''; position: absolute; inset: 55px; border: 2px dashed #9c89cf; border-radius: 50%; transform: rotate(-22deg); }
+    .map .orbit { position: absolute; left: 1%; top: 159px; width: 95%; height: 174px; border: 3px solid #8275b84a; border-radius: 50%; transform: rotate(-22deg); }
+    .map .island { position: absolute; width: 122px; height: 85px; border-radius: 46% 54% 66% 34% / 58% 41% 59% 42%; }
+    .map .island.one { left: 29%; top: 130px; background: #a9cbb8; transform: rotate(-18deg); } .map .island.two { left: 52%; top: 250px; width: 104px; height: 68px; background: #b7d6c7; transform: rotate(25deg); }
+    .map .pin { position: absolute; display: grid; place-items: center; width: 85px; height: 85px; border: 6px solid #f7f4fb; border-radius: 50%; background: #f3c17d; color: #533f34; font-family: 'DM Serif Display', Georgia, serif; font-size: 31px; box-shadow: 0 8px 16px #392d6020; }
+    .map .pin.a { left: 14%; top: 97px; transform: rotate(-13deg); } .map .pin.b { right: 7%; top: 185px; background: #e7a6a0; transform: rotate(10deg); } .map .pin.c { left: 25%; bottom: 11px; background: #aacdbb; transform: rotate(12deg); }
+    .map .small-star { position: absolute; color: #dc9872; font-size: 37px; }
+    .map .small-star.a { right: 14%; top: 60px; } .map .small-star.b { left: 12%; bottom: 78px; font-size: 25px; }
+    .map .floating-card { position: absolute; right: 0; bottom: 3px; width: 196px; padding: 16px 18px; border-radius: 21px; background: #fffdfd; box-shadow: 0 9px 25px #3e315222; transform: rotate(-5deg); }
+    .map .floating-card small { display: block; font-size: 11px; color: #776a9b; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+    .map .floating-card b { display: block; margin-top: 5px; font-family: 'DM Serif Display', Georgia, serif; font-size: 19px; font-weight: 400; }
+    .map .lower { border-top: 1px solid #ddd6ed; padding: 31px 0 56px; }
+    .map .section-head h2 { font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; }
+    .map .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 22px; }
+    .map .card { min-height: 155px; padding: 22px 24px; border-radius: 34px 34px 34px 9px; background: #e9e1f8; }
+    .map .card:nth-child(2) { background: #e0eee6; border-radius: 34px 34px 9px 34px; } .map .card:nth-child(3) { background: #f5e7dd; }
+    .map .card small { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; font-weight: 800; color: #75628c; }
+    .map .card h3 { margin: 12px 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-size: 25px; font-weight: 400; }
+    .map .card p { margin: 0; color: #696179; font-size: 14px; line-height: 1.5; }
+
+    @media (max-width: 800px) {
+      .review { position: static; }
+      .mockup { margin: 12px 10px 0; min-height: 0; }
+      .garden .inner, .notes .inner, .map .inner { padding: 0 25px; }
+      .nav-items { gap: 14px; font-size: 13px; }
+      .nav-items span:nth-child(2), .nav-items span:nth-child(3), .nav-items span:nth-child(4) { display: none; }
+      .brand { font-size: 17px; }
+      .brandmark { width: 36px; height: 36px; font-size: 25px; }
+      .garden .hero, .notes .hero, .map .hero { grid-template-columns: 1fr; gap: 12px; padding: 52px 0 35px; }
+      .garden h1, .notes h1, .map h1 { font-size: clamp(49px, 11vw, 75px); }
+      .garden .art, .notes .art, .map .art { min-height: 395px; max-width: 540px; width: 100%; margin: 0 auto; }
+      .garden .cards, .notes .stories, .map .cards { grid-template-columns: 1fr; }
+      .garden .card, .notes .story, .map .card { min-height: 0; }
+      .meta { margin: 0 10px 35px; padding: 18px 4px; }
+    }
+    @media (max-width: 440px) {
+      .review { padding: 14px; }
+      .tab { padding: 8px 11px; font-size: 12px; }
+      .garden .art, .notes .art, .map .art { transform: scale(.82); transform-origin: top center; margin-bottom: -64px; }
+      .garden .book { left: 5%; }
+      .notes .page { left: 5%; width: 77%; }
+      .map .planet { left: 1%; }
+      .map .floating-card { right: -8%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="review">
+    <div class="review-title">Alex Buaiscia · homepage directions</div>
+    <div class="tabs" role="tablist" aria-label="Choose a design direction">
+      <button class="tab" type="button" role="tab" id="tab-garden" aria-controls="panel-garden" aria-selected="true">01 · Learning garden</button>
+      <button class="tab" type="button" role="tab" id="tab-notes" aria-controls="panel-notes" aria-selected="false">02 · Field notes</button>
+      <button class="tab" type="button" role="tab" id="tab-map" aria-controls="panel-map" aria-selected="false">03 · Discovery map</button>
+    </div>
+  </div>
+
+  <section class="concept active" id="panel-garden" role="tabpanel" aria-labelledby="tab-garden">
+    <div class="mockup garden"><div class="inner">
+      <nav class="site-nav" aria-label="Concept navigation"><div class="brand"><span class="brandmark">◌</span> Alex Buaiscia</div><div class="nav-items"><span>Home</span><span>Learning projects</span><span>Writing</span><span>About</span><span>Let’s talk ↗</span></div></nav>
+      <main><section class="hero"><div class="hero-copy"><div class="eyebrow">Learning · design · curiosity</div><h1>Helping ideas <em>take root.</em></h1><p class="lede">I explore how people learn and create thoughtful experiences that make complex ideas easier to discover. My path connects education, storytelling and technology.</p><div class="actions"><span class="pill">Explore learning projects <span aria-hidden="true">↗</span></span><span class="text-link">Read my writing →</span></div></div><div class="art" aria-hidden="true"><div class="shape-main"></div><div class="shape-peach"></div><div class="orb"></div><div class="stem one"></div><div class="stem two"></div><div class="leaf a"></div><div class="leaf b"></div><div class="leaf c"></div><div class="leaf d"></div><div class="book"><div class="book-center"></div><div class="book-line l1"></div><div class="book-line l2"></div><div class="book-line l3"></div><div class="book-line l4"></div><div class="book-line l5"></div><div class="book-line l6"></div></div><div class="spark one">✳</div><div class="spark two">✦</div></div></section><section class="lower"><div class="section-head"><h2>Learning, in different forms</h2><span class="text-link">All projects →</span></div><div class="cards"><div class="card"><small>Story-based learning</small><h3>The Map of Discoveries</h3><p>An adventure through mathematics and geometry for young learners.</p></div><div class="card"><small>Learning through play</small><h3>From Fire to Stars</h3><p>A printable gamebook about civilizations and connected systems.</p></div><div class="card"><small>Knowledge community</small><h3>PolyAgora</h3><p>A place to share ideas and build a lasting record of knowledge.</p></div></div></section></main>
+    </div></div><div class="meta"><p><strong>Learning garden</strong> · Calmest and most welcoming. Education comes first; the book and growing shapes suggest patient learning.</p><div class="swatches" aria-label="Cream, forest green, sage, peach and gold"><i style="background:#f8f6eb"></i><i style="background:#476c4d"></i><i style="background:#dce8c9"></i><i style="background:#efc2a7"></i><i style="background:#f6e2ab"></i></div></div>
+  </section>
+
+  <section class="concept" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes" hidden>
+    <div class="mockup notes"><div class="inner">
+      <nav class="site-nav" aria-label="Concept navigation"><div class="brand"><span class="brandmark">a.</span> Alex Buaiscia</div><div class="nav-items"><span>Home</span><span>Writing</span><span>Learning projects</span><span>About</span><span>Say hello ↗</span></div></nav>
+      <main><section class="hero"><div class="hero-copy"><div class="eyebrow">Ideas from the classroom and beyond</div><h1>Curiosity is a <em>way of learning.</em></h1><p class="lede">I’m Alex. I bring a background in language education to stories, tools and experiences that invite people to ask better questions.</p><div class="actions"><span class="pill">Explore my notes <span aria-hidden="true">↗</span></span><span class="text-link">See learning projects →</span></div></div><div class="art" aria-hidden="true"><div class="backdrop"></div><div class="page"><small>Field note · 01</small><h3>What makes an idea stay with us?</h3><p>A story to follow.<br>A question to return to.<br>Room to discover the answer.</p><div class="scribble"></div></div><div class="round-label">learn<br>by<br>wondering</div><div class="star">✳</div></div></section><section class="lower"><div class="section-head"><h2>Notes on learning</h2><span class="text-link">All writing →</span></div><div class="stories"><div class="story"><small>Education & practice</small><h3>From language education to designing learning</h3><p>How teaching shapes the way I build and explain.</p></div><div class="story"><small>Project notebook</small><h3>The Map of Discoveries</h3><p>Making mathematics feel like a story to explore.</p></div><div class="story"><small>Play & history</small><h3>From Fire to Stars</h3><p>Using decisions and systems to make history tangible.</p></div></div></section></main>
+    </div></div><div class="meta"><p><strong>Field notes</strong> · Most editorial and personal. Writing leads; warm paper, ink and an imperfect page evoke a working educator’s notebook.</p><div class="swatches" aria-label="Paper, ink, terracotta, muted sage and blush"><i style="background:#fcf7ee"></i><i style="background:#433a31"></i><i style="background:#a75f47"></i><i style="background:#9aada1"></i><i style="background:#f2e4df"></i></div></div>
+  </section>
+
+  <section class="concept" id="panel-map" role="tabpanel" aria-labelledby="tab-map" hidden>
+    <div class="mockup map"><div class="inner">
+      <nav class="site-nav" aria-label="Concept navigation"><div class="brand"><span class="brandmark">✳</span> Alex Buaiscia</div><div class="nav-items"><span>Home</span><span>Learning projects</span><span>Writing</span><span>About</span><span>Get in touch ↗</span></div></nav>
+      <main><section class="hero"><div class="hero-copy"><div class="eyebrow">For curious minds of all ages</div><h1>Learning is an <em>adventure.</em></h1><p class="lede">I design stories and experiences that help people explore ideas, make connections and enjoy the journey of understanding.</p><div class="actions"><span class="pill">Discover the projects <span aria-hidden="true">↗</span></span><span class="text-link">Get to know me →</span></div></div><div class="art" aria-hidden="true"><div class="orbit"></div><div class="planet"></div><div class="island one"></div><div class="island two"></div><div class="pin a">?</div><div class="pin b">✦</div><div class="pin c">↗</div><div class="small-star a">✳</div><div class="small-star b">✦</div><div class="floating-card"><small>Next stop</small><b>A new question</b></div></div></section><section class="lower"><div class="section-head"><h2>Ways to explore</h2><span class="text-link">See all work →</span></div><div class="cards"><div class="card"><small>01 · Discover</small><h3>The Map of Discoveries</h3><p>Math and geometry through a story-based learning app.</p></div><div class="card"><small>02 · Imagine</small><h3>From Fire to Stars</h3><p>History, choices and systems in a printable gamebook.</p></div><div class="card"><small>03 · Connect</small><h3>PolyAgora</h3><p>Conversations and shared knowledge across disciplines.</p></div></div></section></main>
+    </div></div><div class="meta"><p><strong>Discovery map</strong> · Most energetic. Curved paths and playful markers connect directly to the story-based learning projects.</p><div class="swatches" aria-label="Lavender white, deep violet, lilac, mint and apricot"><i style="background:#f7f4fb"></i><i style="background:#63519e"></i><i style="background:#ddd3f5"></i><i style="background:#a9cbb8"></i><i style="background:#f3c17d"></i></div></div>
+  </section>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+    const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+    function showTab(tab) {
+      tabs.forEach(item => item.setAttribute('aria-selected', String(item === tab)));
+      panels.forEach(panel => {
+        const active = panel.id === tab.getAttribute('aria-controls');
+        panel.classList.toggle('active', active);
+        panel.hidden = !active;
+      });
+    }
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        showTab(tab);
+        history.replaceState(null, '', '#' + tab.id.replace('tab-', ''));
+      });
+      tab.addEventListener('keydown', event => {
+        if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+        event.preventDefault();
+        const next = tabs[(index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+        next.focus();
+        showTab(next);
+      });
+    });
+    const initialTab = document.getElementById('tab-' + location.hash.slice(1));
+    if (initialTab) showTab(initialTab);
+  </script>
+</body>
+</html>
